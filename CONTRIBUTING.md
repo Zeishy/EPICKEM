@@ -67,13 +67,13 @@ Les versions et le [CHANGELOG](CHANGELOG.md) sont générés à partir de ces me
 
 Les hooks git sont installés par `pnpm install` (Husky) :
 
-| Moment       | Vérification                                                                         |
-| ------------ | ------------------------------------------------------------------------------------ |
-| Avant commit | ESLint corrige et Prettier formate les fichiers commités (lint-staged)               |
-| Message      | commitlint refuse un message qui ne respecte pas le format ci-dessus                 |
-| Pull request | la CI relance le formatage, le lint, et vérifie que le titre respecte le même format |
+| Moment       | Vérification                                                                                                    |
+| ------------ | --------------------------------------------------------------------------------------------------------------- |
+| Avant commit | ESLint corrige et Prettier formate les fichiers commités (lint-staged)                                          |
+| Message      | commitlint refuse un message qui ne respecte pas le format ci-dessus                                            |
+| Pull request | la CI vérifie le titre, le formatage, le lint, les types, les tests et le build ; une CI rouge bloque la fusion |
 
-Si ESLint signale une erreur qu'il ne sait pas corriger, le commit est annulé : corriger puis recommencer. Pour tout vérifier avant de pousser : `pnpm format:check` et `pnpm lint`.
+Si ESLint signale une erreur qu'il ne sait pas corriger, le commit est annulé : corriger puis recommencer. Pour tout vérifier avant de pousser : `pnpm format:check`, `pnpm lint`, `pnpm typecheck` et `pnpm test`.
 
 ## Pull requests
 

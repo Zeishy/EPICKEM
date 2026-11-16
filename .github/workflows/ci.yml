@@ -12,10 +12,13 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  TURBO_TELEMETRY_DISABLED: 1
+
 jobs:
-  # Mêmes vérifications que les hooks locaux. Typecheck, tests et build arrivent avec #7.
-  quality:
-    name: Lint, formatage et conventions
+  # Nom du check à rendre obligatoire dans la protection de main (#4) : « Vérifications ».
+  checks:
+    name: Vérifications
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -28,13 +31,14 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
 
+      # Cache Turborepo : les tâches dont les fichiers n'ont pas changé ne sont pas relancées.
+      - uses: actions/cache@v6
+        with:
+          path: .turbo/cache
+          key: turbo-${{ runner.os }}-${{ github.sha }}
+          restore-keys: turbo-${{ runner.os }}-
+
       - run: pnpm install --frozen-lockfile
-
-      - name: Formatage
-        run: pnpm format:check
-
-      - name: Lint
-        run: pnpm lint
 
       # Les PR sont fusionnées en squash : c'est leur titre qui devient le message du commit.
       - name: Titre de la pull request
@@ -42,3 +46,18 @@ jobs:
         env:
           TITLE: ${{ github.event.pull_request.title }}
         run: printf '%s\n' "$TITLE" | pnpm exec commitlint --verbose
+
+      - name: Formatage
+        run: pnpm format:check
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Types
+        run: pnpm typecheck
+
+      - name: Tests
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build

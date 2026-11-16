@@ -1,5 +1,7 @@
 # EPICKEM
 
+[![CI](https://github.com/Zeishy/EPICKEM/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Zeishy/EPICKEM/actions/workflows/ci.yml)
+
 > Nom provisoire : le nom, le logo et la charte du produit arrivent avec #11.
 
 Une plateforme de tournois e-sport où chaque résultat fait avancer l'arbre et met à jour en temps réel les pronostics, les Pick'em et les classements, sur le web et sur une application Android.
