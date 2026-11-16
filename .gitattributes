@@ -1,0 +1,30 @@
+# Fins de ligne LF pour tous les fichiers texte, quel que soit le système ou le réglage git de chacun.
+* text=auto eol=lf
+
+# Scripts Windows : CRLF obligatoire.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binaires : git ne touche jamais à leurs octets.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.mp4 binary
+*.zip binary
+*.apk binary
+*.aab binary
+*.jar binary
+*.keystore binary
+*.jks binary
+
+# Lockfile généré : pas de diff ligne à ligne dans les PR.
+pnpm-lock.yaml -diff linguist-generated
