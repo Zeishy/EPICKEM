@@ -1,0 +1,4 @@
+# En plus de .gitignore, que Prettier lit déjà.
+pnpm-lock.yaml
+# Généré par release-please (#8).
+CHANGELOG.md

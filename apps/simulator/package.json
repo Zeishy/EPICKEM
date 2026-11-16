@@ -8,6 +8,7 @@
     "build": "tsc -p tsconfig.build.json",
     "start": "node src/main.ts",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
     "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
   },
   "dependencies": {
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "catalog:",
+    "eslint": "catalog:",
     "typescript": "catalog:"
   }
 }

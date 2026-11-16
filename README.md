@@ -14,11 +14,11 @@ Toutes les données de démonstration sont générées : le projet ne contient a
 
 ## Prérequis
 
-| Outil | Version | Installation |
-|---|---|---|
-| Node.js | 24 ou plus (voir `.nvmrc`) | [nodejs.org](https://nodejs.org) |
-| pnpm | 11 | `npm install -g pnpm@11` |
-| Docker | récent | Nécessaire pour PostgreSQL et Redis à partir de #6 |
+| Outil   | Version                    | Installation                                       |
+| ------- | -------------------------- | -------------------------------------------------- |
+| Node.js | 24 ou plus (voir `.nvmrc`) | [nodejs.org](https://nodejs.org)                   |
+| pnpm    | 11                         | `npm install -g pnpm@11`                           |
+| Docker  | récent                     | Nécessaire pour PostgreSQL et Redis à partir de #6 |
 
 ## Installation
 
@@ -26,10 +26,15 @@ Toutes les données de démonstration sont générées : le projet ne contient a
 git clone git@github.com:Zeishy/EPICKEM.git
 cd EPICKEM
 pnpm install
+pnpm build
 cp .env.example .env
 ```
 
-Le fichier `.env.example` décrit chaque variable. Le fichier `.env` n'est jamais commité.
+- `pnpm install` installe aussi les hooks git, qui vérifient le format et le message de chaque commit.
+- `pnpm build` compile les paquets partagés : le lint et l'éditeur en ont besoin pour connaître leurs types.
+- Le fichier `.env.example` décrit chaque variable. Le fichier `.env` n'est jamais commité.
+
+Sous VS Code, installez les extensions recommandées à l'ouverture du dossier : le code est alors formaté et corrigé à chaque enregistrement.
 
 ## Lancement
 
@@ -39,21 +44,22 @@ pnpm dev
 
 Pour l'instant, seule une API provisoire démarre, sur <http://localhost:3000/health>. Les applications arrivent avec leurs issues :
 
-| Application | Issue |
-|---|---|
-| API (NestJS) | #15 |
-| Web (React + Vite) | #16 |
-| Mobile (Expo) | #51 |
-| Simulateur | #48 |
+| Application        | Issue |
+| ------------------ | ----- |
+| API (NestJS)       | #15   |
+| Web (React + Vite) | #16   |
+| Mobile (Expo)      | #51   |
+| Simulateur         | #48   |
 
 ## Tests et vérifications
 
-| Commande | Effet |
-|---|---|
-| `pnpm test` | Lance tous les tests |
-| `pnpm typecheck` | Vérifie les types |
-| `pnpm lint` | Lance le lint (configuré par #2) |
-| `pnpm build` | Compile tous les paquets dans l'ordre des dépendances |
+| Commande         | Effet                                                 |
+| ---------------- | ----------------------------------------------------- |
+| `pnpm test`      | Lance tous les tests                                  |
+| `pnpm typecheck` | Vérifie les types                                     |
+| `pnpm lint`      | Lance ESLint, dont les règles d'accessibilité         |
+| `pnpm format`    | Formate tout le dépôt avec Prettier                   |
+| `pnpm build`     | Compile tous les paquets dans l'ordre des dépendances |
 
 Ces commandes sont orchestrées par Turborepo et mettent les résultats en cache. Pour cibler un seul paquet : `pnpm --filter @epickem/engine test`.
 
@@ -66,16 +72,16 @@ Si `pnpm build` échoue avec `spawn UNKNOWN`, Smart App Control bloque `turbo.ex
 
 ## Organisation du dépôt
 
-| Dossier | Contenu |
-|---|---|
-| `apps/api` | API REST et temps réel |
-| `apps/web` | Application web |
-| `apps/mobile` | Application Android |
-| `apps/simulator` | Génération de données fictives, démo et tests de charge |
-| `packages/engine` | Moteur de tournois : fonctions pures, sans base de données |
-| `packages/shared` | Types et schémas partagés |
-| `packages/connectors` | Connecteurs externes (start.gg…) |
-| `docs` | Documentation et décisions d'architecture |
+| Dossier               | Contenu                                                    |
+| --------------------- | ---------------------------------------------------------- |
+| `apps/api`            | API REST et temps réel                                     |
+| `apps/web`            | Application web                                            |
+| `apps/mobile`         | Application Android                                        |
+| `apps/simulator`      | Génération de données fictives, démo et tests de charge    |
+| `packages/engine`     | Moteur de tournois : fonctions pures, sans base de données |
+| `packages/shared`     | Types et schémas partagés                                  |
+| `packages/connectors` | Connecteurs externes (start.gg…)                           |
+| `docs`                | Documentation et décisions d'architecture                  |
 
 Principe central : les résultats des matchs sont la seule source de vérité. L'état des tournois et les points des pronostiqueurs sont recalculés à partir d'eux par le moteur.
 

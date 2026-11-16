@@ -10,7 +10,7 @@ Closes #
 
 <!-- Les étapes pour vérifier le changement à la main. -->
 
-1. 
+1.
 
 ## Captures d'écran
 

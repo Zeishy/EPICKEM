@@ -14,11 +14,11 @@ Elles priment sur tout le reste :
 
 ## Du ticket à la fusion
 
-1. **Choisir une issue** sur le [tableau](https://github.com/users/Zeishy/projects/2), s'y assigner et la passer en *In progress*.
+1. **Choisir une issue** sur le [tableau](https://github.com/users/Zeishy/projects/2), s'y assigner et la passer en _In progress_.
 2. **Créer une branche** depuis `main` à jour.
 3. **Développer** avec des commits au format Conventional Commits.
-4. **Ouvrir une pull request** : l'issue passe en *In review*.
-5. **Faire relire** par quelqu'un d'un autre profil, corriger, puis fusionner en squash. L'issue passe en *Done*.
+4. **Ouvrir une pull request** : l'issue passe en _In review_.
+5. **Faire relire** par quelqu'un d'un autre profil, corriger, puis fusionner en squash. L'issue passe en _Done_.
 
 ## Branches
 
@@ -26,13 +26,13 @@ Elles priment sur tout le reste :
 
 Une branche par issue, nommée `<type>/<numéro>-<description-courte>` :
 
-| Préfixe | Usage | Exemple |
-|---|---|---|
-| `feat/` | Nouvelle fonctionnalité | `feat/25-ronde-suisse` |
-| `fix/` | Correction de bug | `fix/112-score-negatif` |
-| `docs/` | Documentation | `docs/13-site-docusaurus` |
-| `chore/` | Outillage, configuration, CI | `chore/7-pipeline-ci` |
-| `test/` | Tests uniquement | `test/74-tests-moteur` |
+| Préfixe  | Usage                        | Exemple                   |
+| -------- | ---------------------------- | ------------------------- |
+| `feat/`  | Nouvelle fonctionnalité      | `feat/25-ronde-suisse`    |
+| `fix/`   | Correction de bug            | `fix/112-score-negatif`   |
+| `docs/`  | Documentation                | `docs/13-site-docusaurus` |
+| `chore/` | Outillage, configuration, CI | `chore/7-pipeline-ci`     |
+| `test/`  | Tests uniquement             | `test/74-tests-moteur`    |
 
 ## Commits
 
@@ -44,24 +44,36 @@ fix(api): refuser un score négatif
 docs(adr): choix de l'hébergement
 ```
 
-| Type | Usage |
-|---|---|
-| `feat` | Nouvelle fonctionnalité (version mineure) |
-| `fix` | Correction de bug (version de correctif) |
-| `docs` | Documentation |
-| `test` | Ajout ou correction de tests |
+| Type       | Usage                                           |
+| ---------- | ----------------------------------------------- |
+| `feat`     | Nouvelle fonctionnalité (version mineure)       |
+| `fix`      | Correction de bug (version de correctif)        |
+| `docs`     | Documentation                                   |
+| `test`     | Ajout ou correction de tests                    |
 | `refactor` | Restructuration sans changement de comportement |
-| `perf` | Performance |
-| `style` | Formatage, sans changement de code |
-| `build` | Dépendances, build |
-| `ci` | Intégration continue |
-| `chore` | Autre maintenance |
+| `perf`     | Performance                                     |
+| `style`    | Formatage, sans changement de code              |
+| `build`    | Dépendances, build                              |
+| `ci`       | Intégration continue                            |
+| `chore`    | Autre maintenance                               |
 
-Le scope reprend la zone touchée : `engine`, `api`, `web`, `mobile`, `realtime`, `import`, `simulator`, `shared`, `connectors`, `infra`, `docs`, `adr`.
+Le scope est facultatif et reprend la zone touchée : `engine`, `api`, `web`, `mobile`, `realtime`, `import`, `simulator`, `shared`, `connectors`, `infra`, `docs`, `adr`. Les scopes `deps`, `deps-dev` et `main` sont réservés aux outils (Dependabot, release-please). Pour en ajouter un, modifier [`commitlint.config.js`](commitlint.config.js).
 
 Un changement incompatible se signale par `!` après le scope (`feat(api)!: …`) et une ligne `BREAKING CHANGE:` dans le corps du commit.
 
 Les versions et le [CHANGELOG](CHANGELOG.md) sont générés à partir de ces messages : un message bien formé compte.
+
+## Vérifications automatiques
+
+Les hooks git sont installés par `pnpm install` (Husky) :
+
+| Moment       | Vérification                                                                         |
+| ------------ | ------------------------------------------------------------------------------------ |
+| Avant commit | ESLint corrige et Prettier formate les fichiers commités (lint-staged)               |
+| Message      | commitlint refuse un message qui ne respecte pas le format ci-dessus                 |
+| Pull request | la CI relance le formatage, le lint, et vérifie que le titre respecte le même format |
+
+Si ESLint signale une erreur qu'il ne sait pas corriger, le commit est annulé : corriger puis recommencer. Pour tout vérifier avant de pousser : `pnpm format:check` et `pnpm lint`.
 
 ## Pull requests
 
@@ -79,7 +91,7 @@ Une issue est terminée quand :
 - [ ] les tests sont écrits et la CI est verte ;
 - [ ] l'interface, s'il y en a une, est utilisable au clavier et au lecteur d'écran ;
 - [ ] la documentation (utilisateur et/ou technique) est à jour ;
-- [ ] la PR est relue et fusionnée, et l'issue est en *Done*.
+- [ ] la PR est relue et fusionnée, et l'issue est en _Done_.
 
 ## Signaler un bug ou proposer une fonctionnalité
 

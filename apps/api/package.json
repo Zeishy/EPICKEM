@@ -9,10 +9,12 @@
     "dev": "node --watch src/main.ts",
     "start": "node dist/main.js",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
     "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
   },
   "devDependencies": {
     "@types/node": "catalog:",
+    "eslint": "catalog:",
     "typescript": "catalog:"
   }
 }
