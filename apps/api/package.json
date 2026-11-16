@@ -1,0 +1,18 @@
+{
+  "name": "@epickem/api",
+  "version": "0.0.0",
+  "private": true,
+  "description": "API REST et temps réel. Point d'entrée provisoire : le socle NestJS arrive avec #15.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "node --watch src/main.ts",
+    "start": "node dist/main.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

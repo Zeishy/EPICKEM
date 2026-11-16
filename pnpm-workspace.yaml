@@ -1,0 +1,11 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Versions partagées : un paquet les référence avec "catalog:".
+catalog:
+  "@types/node": ^24.0.0
+  turbo: 2.11.11
+  # TypeScript 6.0 : typescript-eslint (#2) ne supporte pas encore TypeScript 7.
+  typescript: ~6.0.3
+  vitest: ^5.1.0

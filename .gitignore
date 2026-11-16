@@ -1,0 +1,27 @@
+# Dépendances
+node_modules/
+
+# Builds et caches
+dist/
+build/
+coverage/
+.turbo/
+*.tsbuildinfo
+
+# Environnement : seul .env.example est commité
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Éditeurs et OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
