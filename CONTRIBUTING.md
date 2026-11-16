@@ -14,15 +14,17 @@ Elles priment sur tout le reste :
 
 ## Du ticket à la fusion
 
-1. **Choisir une issue** sur le [tableau](https://github.com/users/Zeishy/projects/2), s'y assigner et la passer en _In progress_.
+1. **Prendre une issue** : la plus prioritaire de la colonne _Todo_ du [tableau](https://github.com/users/Zeishy/projects/2) qui n'a pas encore de responsable (`priority: P0` avant `P1`, puis `P2`). S'y assigner et la passer en _In progress_.
 2. **Créer une branche** depuis `main` à jour.
 3. **Développer** avec des commits au format Conventional Commits.
 4. **Ouvrir une pull request** : l'issue passe en _In review_.
-5. **Faire relire** par quelqu'un d'un autre profil, corriger, puis fusionner en squash. L'issue passe en _Done_.
+5. **Faire relire** par un autre membre de l'équipe, corriger, puis fusionner en squash. L'issue passe en _Done_.
+
+Il n'y a pas de rôles fixes : chacun prend la tâche suivante, quel que soit le domaine.
 
 ## Branches
 
-`main` est protégée : pas de push direct, une relecture et une CI verte sont obligatoires.
+`main` est protégée : pas de push direct ni de force push, une approbation et le check CI « Vérifications » sont obligatoires, les discussions de relecture doivent être résolues. Les branches fusionnées sont supprimées automatiquement.
 
 Une branche par issue, nommée `<type>/<numéro>-<description-courte>` :
 
@@ -80,7 +82,7 @@ Si ESLint signale une erreur qu'il ne sait pas corriger, le commit est annulé :
 - **Titre** au format Conventional Commits : c'est le message du commit après la fusion en squash.
 - **Description** : remplir le modèle, avec `Closes #<numéro>` pour fermer l'issue automatiquement.
 - **Taille** : une PR par issue. Si une issue dépasse quelques jours de travail, la découper.
-- **Relecture** : par quelqu'un d'un autre profil. Chacun doit pouvoir expliquer tout le code en soutenance.
+- **Relecture** : toute l'équipe est sollicitée automatiquement ([CODEOWNERS](.github/CODEOWNERS)), l'approbation d'un membre autre que l'auteur suffit. Varier les relecteurs : chacun doit pouvoir expliquer tout le code en soutenance.
 - **Fusion** : en squash, par l'auteur, une fois la PR approuvée et la CI verte.
 
 ## Définition de « terminé »

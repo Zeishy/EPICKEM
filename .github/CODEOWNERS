@@ -1,0 +1,5 @@
+# Toute l'équipe est propriétaire de tout le dépôt : chaque pull request demande
+# automatiquement la relecture des autres membres. L'auteur ne peut pas approuver
+# sa propre PR, l'approbation d'un autre membre suffit.
+# Ajouter ici chaque nouveau membre (accès en écriture obligatoire).
+* @Zeishy @AlexandreVaryn @thomasvsl
