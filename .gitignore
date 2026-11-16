@@ -13,6 +13,27 @@ coverage/
 .env.*
 !.env.example
 
+# Secrets et certificats
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+!debug.keystore
+
+# Web : tests de bout en bout (Playwright)
+playwright-report/
+test-results/
+blob-report/
+
+# Mobile (Expo)
+.expo/
+*.apk
+*.aab
+
+# Documentation (Docusaurus)
+.docusaurus/
+
 # Logs
 *.log
 npm-debug.log*

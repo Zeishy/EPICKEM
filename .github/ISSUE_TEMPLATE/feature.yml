@@ -1,0 +1,36 @@
+name: Fonctionnalité
+description: Proposer une nouvelle fonctionnalité ou une évolution.
+title: "<Verbe à l'infinitif> <objet>"
+labels: ["type: feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ajoutez ensuite les labels `area:` et `priority:`, le milestone et la taille sur le tableau.
+  - type: textarea
+    id: need
+    attributes:
+      label: Besoin
+      description: Qui en a besoin, et pourquoi ?
+      placeholder: En tant qu'administrateur, je veux… afin de…
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critères d'acceptation
+      description: Ce qui doit être vrai pour considérer l'issue terminée.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibilité
+      description: Si la fonctionnalité a une interface, comment l'utiliser au clavier et au lecteur d'écran ?
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes techniques
+      description: Pistes, dépendances vers d'autres issues, liens utiles.

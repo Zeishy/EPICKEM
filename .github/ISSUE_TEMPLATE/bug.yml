@@ -1,0 +1,62 @@
+name: Bug
+description: Signaler un comportement incorrect.
+title: "<Ce qui ne marche pas>"
+labels: ["type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        N'incluez aucune donnée personnelle réelle ni aucun secret (jeton, mot de passe) dans ce rapport.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Où ?
+      options:
+        - Web
+        - Mobile
+        - API
+        - Moteur de tournois
+        - Import start.gg ou fichier
+        - Simulateur
+        - CI, déploiement
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportement observé
+      description: Captures d'écran bienvenues.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version ou commit
+      placeholder: v0.1.0, ou le hash du commit
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement
+      description: Navigateur, appareil Android, système, technologie d'assistance utilisée…
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      render: text
