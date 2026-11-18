@@ -90,7 +90,7 @@ Principe central : les résultats des matchs sont la seule source de vérité. L
 ## Documentation
 
 - [`docs/`](docs/) : documentation utilisateur et technique. Le site publié arrive avec #13.
-- `docs/adr/` : décisions d'architecture, à partir de #9.
+- [`docs/adr/`](docs/adr/) : décisions d'architecture (stack, hébergement, recalcul des résultats) et modèle pour en écrire une.
 - [`CHANGELOG.md`](CHANGELOG.md) : historique des versions.
 
 ## Contribuer
