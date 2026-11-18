@@ -12,3 +12,4 @@ Toutes les évolutions notables du projet sont listées ici. Le format suit [Kee
 - Fichiers du dépôt : README, guide de contribution, code de conduite, licence, modèles d'issue et de pull request.
 - Qualité automatique : ESLint (dont l'accessibilité JSX), Prettier, hooks git (lint-staged, commitlint) et vérifications en CI.
 - Pipeline CI : titre de PR, formatage, lint, types, tests et build, avec cache pnpm et Turborepo.
+- Branche d'intégration `dev` : les pull requests ciblent `dev` (deux relectures), `main` ne reçoit que des livraisons depuis `dev`, contrôlées par le check « Source de la PR ».
