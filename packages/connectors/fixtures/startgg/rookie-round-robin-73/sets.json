@@ -1,0 +1,8745 @@
+[
+  {
+    "id": 109671110,
+    "identifier": "A",
+    "round": 1,
+    "fullRoundText": "Round 1",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793666106,
+    "completedAt": 1793667618,
+    "updatedAt": 1793667618,
+    "winnerId": 1,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42082220,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1406,
+              "name": "Incineroar"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082221,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082222,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082223,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082224,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1406,
+              "name": "Incineroar"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671111,
+    "identifier": "B",
+    "round": 1,
+    "fullRoundText": "Round 1",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793666208,
+    "completedAt": 1793666960,
+    "updatedAt": 1793666961,
+    "winnerId": 3,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42081817,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 4
+            },
+            "character": {
+              "id": 1532,
+              "name": "Terry"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42081818,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 4
+            },
+            "character": {
+              "id": 1532,
+              "name": "Terry"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42081819,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 4
+            },
+            "character": {
+              "id": 1532,
+              "name": "Terry"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671112,
+    "identifier": "C",
+    "round": 1,
+    "fullRoundText": "Round 1",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793666205,
+    "completedAt": 1793667453,
+    "updatedAt": 1793667454,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42082070,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082071,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082072,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082073,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671113,
+    "identifier": "D",
+    "round": 1,
+    "fullRoundText": "Round 1",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793666252,
+    "completedAt": 1793667215,
+    "updatedAt": 1793667215,
+    "winnerId": 7,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42081954,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42081955,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 8,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42081956,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42081957,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671114,
+    "identifier": "E",
+    "round": 1,
+    "fullRoundText": "Round 1",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793669225,
+    "completedAt": 1793670219,
+    "updatedAt": 1793670220,
+    "winnerId": 9,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42085219,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085220,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085221,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085222,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671115,
+    "identifier": "F",
+    "round": 2,
+    "fullRoundText": "Round 2",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793669132,
+    "completedAt": 1793669864,
+    "updatedAt": 1793669865,
+    "winnerId": 11,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42084851,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42084852,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42084853,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671116,
+    "identifier": "G",
+    "round": 2,
+    "fullRoundText": "Round 2",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793675081,
+    "completedAt": 1793676320,
+    "updatedAt": 1793676320,
+    "winnerId": 6,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42089924,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1441,
+              "name": "Piranha Plant"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1341,
+              "name": "Zero Suit Samus"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089925,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1441,
+              "name": "Piranha Plant"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089926,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1441,
+              "name": "Piranha Plant"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089927,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089928,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1406,
+              "name": "Incineroar"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671117,
+    "identifier": "H",
+    "round": 2,
+    "fullRoundText": "Round 2",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667368,
+    "completedAt": 1793667370,
+    "updatedAt": 1793667371,
+    "winnerId": 7,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671118,
+    "identifier": "I",
+    "round": 2,
+    "fullRoundText": "Round 2",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793671126,
+    "completedAt": 1793672043,
+    "updatedAt": 1793672044,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42086928,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086929,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086930,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671119,
+    "identifier": "J",
+    "round": 2,
+    "fullRoundText": "Round 2",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793668513,
+    "completedAt": 1793668534,
+    "updatedAt": 1793668534,
+    "winnerId": 10,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42083225,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 8,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083226,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083227,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083228,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671120,
+    "identifier": "K",
+    "round": 3,
+    "fullRoundText": "Round 3",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": null,
+    "completedAt": 1793676191,
+    "updatedAt": 1793676191,
+    "winnerId": 11,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42089860,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089862,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1294,
+              "name": "King Dedede"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089863,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1294,
+              "name": "King Dedede"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089864,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1294,
+              "name": "King Dedede"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089865,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1294,
+              "name": "King Dedede"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671121,
+    "identifier": "L",
+    "round": 3,
+    "fullRoundText": "Round 3",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793670160,
+    "completedAt": 1793670807,
+    "updatedAt": 1793670808,
+    "winnerId": 2,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42085738,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085739,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085740,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671122,
+    "identifier": "M",
+    "round": 3,
+    "fullRoundText": "Round 3",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793672582,
+    "completedAt": 1793672902,
+    "updatedAt": 1793672902,
+    "winnerId": 9,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42087738,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1406,
+              "name": "Incineroar"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087739,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087740,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671123,
+    "identifier": "N",
+    "round": 3,
+    "fullRoundText": "Round 3",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667358,
+    "completedAt": 1793667360,
+    "updatedAt": 1793667360,
+    "winnerId": 10,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671124,
+    "identifier": "O",
+    "round": 3,
+    "fullRoundText": "Round 3",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": null,
+    "completedAt": 1793672800,
+    "updatedAt": 1793672801,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671125,
+    "identifier": "P",
+    "round": 4,
+    "fullRoundText": "Round 4",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793668447,
+    "completedAt": 1793669060,
+    "updatedAt": 1793669061,
+    "winnerId": 11,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42083873,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083874,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083875,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1304,
+              "name": "Marth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671126,
+    "identifier": "Q",
+    "round": 4,
+    "fullRoundText": "Round 4",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": null,
+    "completedAt": 1793677149,
+    "updatedAt": 1793677192,
+    "winnerId": 3,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42090299,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090300,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090301,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090302,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671127,
+    "identifier": "R",
+    "round": 4,
+    "fullRoundText": "Round 4",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793668281,
+    "completedAt": 1793669039,
+    "updatedAt": 1793669039,
+    "winnerId": 9,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42083840,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083841,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083842,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083843,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671128,
+    "identifier": "S",
+    "round": 4,
+    "fullRoundText": "Round 4",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793670939,
+    "completedAt": 1793671624,
+    "updatedAt": 1793671625,
+    "winnerId": 1,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42086519,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086520,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086521,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671129,
+    "identifier": "T",
+    "round": 4,
+    "fullRoundText": "Round 4",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667344,
+    "completedAt": 1793667345,
+    "updatedAt": 1793667346,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671130,
+    "identifier": "U",
+    "round": 5,
+    "fullRoundText": "Round 5",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793670994,
+    "completedAt": 1793671636,
+    "updatedAt": 1793671637,
+    "winnerId": 11,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42086540,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086541,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086542,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671131,
+    "identifier": "V",
+    "round": 5,
+    "fullRoundText": "Round 5",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": null,
+    "completedAt": 1793674553,
+    "updatedAt": 1793674553,
+    "winnerId": 9,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42088832,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088833,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088834,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1341,
+              "name": "Zero Suit Samus"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671132,
+    "identifier": "W",
+    "round": 5,
+    "fullRoundText": "Round 5",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793673930,
+    "completedAt": 1793674631,
+    "updatedAt": 1793674631,
+    "winnerId": 3,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42088889,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088890,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088891,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088892,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671133,
+    "identifier": "X",
+    "round": 5,
+    "fullRoundText": "Round 5",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": null,
+    "completedAt": 1793672809,
+    "updatedAt": 1793672809,
+    "winnerId": 2,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671134,
+    "identifier": "Y",
+    "round": 5,
+    "fullRoundText": "Round 5",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667340,
+    "completedAt": 1793667341,
+    "updatedAt": 1793667342,
+    "winnerId": 1,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671136,
+    "identifier": "AA",
+    "round": 6,
+    "fullRoundText": "Round 6",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793673161,
+    "completedAt": 1793673919,
+    "updatedAt": 1793673919,
+    "winnerId": 10,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42088452,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088453,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088454,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088455,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671137,
+    "identifier": "AB",
+    "round": 6,
+    "fullRoundText": "Round 6",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793669143,
+    "completedAt": 1793670144,
+    "updatedAt": 1793670144,
+    "winnerId": 8,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42085147,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 8,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085148,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085149,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 8,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085150,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 8,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671138,
+    "identifier": "AC",
+    "round": 6,
+    "fullRoundText": "Round 6",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793670577,
+    "completedAt": 1793671079,
+    "updatedAt": 1793671079,
+    "winnerId": 3,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42086007,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086008,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086009,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086011,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086012,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671139,
+    "identifier": "AD",
+    "round": 6,
+    "fullRoundText": "Round 6",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667377,
+    "completedAt": 1793667378,
+    "updatedAt": 1793667379,
+    "winnerId": 2,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671135,
+    "identifier": "Z",
+    "round": 6,
+    "fullRoundText": "Round 6",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793670240,
+    "completedAt": 1793670984,
+    "updatedAt": 1793670985,
+    "winnerId": 11,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42085919,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085920,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085921,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671140,
+    "identifier": "AE",
+    "round": 7,
+    "fullRoundText": "Round 7",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793677995,
+    "completedAt": 1793679167,
+    "updatedAt": 1793679168,
+    "winnerId": 11,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42091043,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42091044,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42091045,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42091046,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42091047,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671141,
+    "identifier": "AF",
+    "round": 7,
+    "fullRoundText": "Round 7",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": null,
+    "completedAt": 1793672803,
+    "updatedAt": 1793672804,
+    "winnerId": 9,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671142,
+    "identifier": "AG",
+    "round": 7,
+    "fullRoundText": "Round 7",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793668468,
+    "completedAt": 1793669620,
+    "updatedAt": 1793669620,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42084531,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1324,
+              "name": "Robin"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42084532,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1324,
+              "name": "Robin"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42084533,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1324,
+              "name": "Robin"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42084534,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1324,
+              "name": "Robin"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42084535,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671143,
+    "identifier": "AH",
+    "round": 7,
+    "fullRoundText": "Round 7",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667373,
+    "completedAt": 1793667374,
+    "updatedAt": 1793667374,
+    "winnerId": 6,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671144,
+    "identifier": "AI",
+    "round": 7,
+    "fullRoundText": "Round 7",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793668307,
+    "completedAt": 1793669220,
+    "updatedAt": 1793669220,
+    "winnerId": 3,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42084019,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1406,
+              "name": "Incineroar"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42084020,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1406,
+              "name": "Incineroar"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42084021,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671145,
+    "identifier": "AJ",
+    "round": 8,
+    "fullRoundText": "Round 8",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793671647,
+    "completedAt": 1793672570,
+    "updatedAt": 1793672571,
+    "winnerId": 11,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42087471,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087472,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 8,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087474,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087475,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 8
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671146,
+    "identifier": "AK",
+    "round": 8,
+    "fullRoundText": "Round 8",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793672058,
+    "completedAt": 1793673155,
+    "updatedAt": 1793673156,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42087906,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087907,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087908,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087909,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671147,
+    "identifier": "AL",
+    "round": 8,
+    "fullRoundText": "Round 8",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667363,
+    "completedAt": 1793667365,
+    "updatedAt": 1793667366,
+    "winnerId": 9,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671148,
+    "identifier": "AM",
+    "round": 8,
+    "fullRoundText": "Round 8",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793670565,
+    "completedAt": 1793670913,
+    "updatedAt": 1793670913,
+    "winnerId": 1,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42085842,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1287,
+              "name": "Ganondorf"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085843,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1287,
+              "name": "Ganondorf"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085844,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1414,
+              "name": "Mii Swordfighter"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085845,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1310,
+              "name": "Mewtwo"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42085846,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1310,
+              "name": "Mewtwo"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671149,
+    "identifier": "AN",
+    "round": 8,
+    "fullRoundText": "Round 8",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793672515,
+    "completedAt": 1793673368,
+    "updatedAt": 1793673369,
+    "winnerId": 3,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42088047,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1282,
+              "name": "Dr. Mario"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088048,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1282,
+              "name": "Dr. Mario"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088049,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088050,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088051,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1334,
+              "name": "Villager"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1298,
+              "name": "Lucario"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671150,
+    "identifier": "AO",
+    "round": 9,
+    "fullRoundText": "Round 9",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667463,
+    "completedAt": 1793668345,
+    "updatedAt": 1793668346,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42082952,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082953,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082954,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082955,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1539,
+              "name": "Byleth"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671151,
+    "identifier": "AP",
+    "round": 9,
+    "fullRoundText": "Round 9",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667353,
+    "completedAt": 1793667355,
+    "updatedAt": 1793667355,
+    "winnerId": 8,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671152,
+    "identifier": "AQ",
+    "round": 9,
+    "fullRoundText": "Round 9",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793676865,
+    "completedAt": 1793676898,
+    "updatedAt": 1793676899,
+    "winnerId": 10,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42090162,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090163,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1323,
+              "name": "R.O.B."
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090164,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1326,
+              "name": "Roy"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1766,
+              "name": "Steve"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671153,
+    "identifier": "AR",
+    "round": 9,
+    "fullRoundText": "Round 9",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793672088,
+    "completedAt": 1793672505,
+    "updatedAt": 1793672505,
+    "winnerId": 2,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42087404,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087405,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42087406,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671154,
+    "identifier": "AS",
+    "round": 9,
+    "fullRoundText": "Round 9",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793671176,
+    "completedAt": 1793672077,
+    "updatedAt": 1793672077,
+    "winnerId": 3,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42086978,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086979,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086980,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671155,
+    "identifier": "AT",
+    "round": 10,
+    "fullRoundText": "Round 10",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667334,
+    "completedAt": 1793667336,
+    "updatedAt": 1793667336,
+    "winnerId": 11,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42506714",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 4,
+          "name": "Participant 004"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671156,
+    "identifier": "AU",
+    "round": 10,
+    "fullRoundText": "Round 10",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793674225,
+    "completedAt": 1793674963,
+    "updatedAt": 1793674963,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42089111,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1310,
+              "name": "Mewtwo"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1274,
+              "name": "Captain Falcon"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089112,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1310,
+              "name": "Mewtwo"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1324,
+              "name": "Robin"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42089113,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1324,
+              "name": "Robin"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671157,
+    "identifier": "AV",
+    "round": 10,
+    "fullRoundText": "Round 10",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793670826,
+    "completedAt": 1793671831,
+    "updatedAt": 1793675137,
+    "winnerId": 2,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42086727,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086728,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086729,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1302,
+              "name": "Mario"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42086730,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 2,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1302,
+              "name": "Mario"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671158,
+    "identifier": "AW",
+    "round": 10,
+    "fullRoundText": "Round 10",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793666996,
+    "completedAt": 1793668266,
+    "updatedAt": 1793668267,
+    "winnerId": 9,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42082868,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1282,
+              "name": "Dr. Mario"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082869,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082870,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082871,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 3,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42082872,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 3
+            },
+            "character": {
+              "id": 1315,
+              "name": "Pac-Man"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671159,
+    "identifier": "AX",
+    "round": 10,
+    "fullRoundText": "Round 10",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793667490,
+    "completedAt": 1793668320,
+    "updatedAt": 1793668405,
+    "winnerId": 7,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 1
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42083045,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083046,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083047,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42083048,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 7,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1338,
+              "name": "Yoshi"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671160,
+    "identifier": "AY",
+    "round": 11,
+    "fullRoundText": "Round 11",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793672922,
+    "completedAt": 1793674178,
+    "updatedAt": 1793674179,
+    "winnerId": 1,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42510664",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 11,
+          "name": "Participant 011"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42505803",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 1,
+          "name": "Participant 001"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42088617,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1441,
+              "name": "Piranha Plant"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088618,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1441,
+              "name": "Piranha Plant"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088619,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 11,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1441,
+              "name": "Piranha Plant"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088620,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1441,
+              "name": "Piranha Plant"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088621,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 1,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 1
+            },
+            "character": {
+              "id": 1441,
+              "name": "Piranha Plant"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 11
+            },
+            "character": {
+              "id": 1271,
+              "name": "Bayonetta"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671161,
+    "identifier": "AZ",
+    "round": 11,
+    "fullRoundText": "Round 11",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793673376,
+    "completedAt": 1793674213,
+    "updatedAt": 1793674214,
+    "winnerId": 5,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506004",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 5,
+          "name": "Participant 005"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509694",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 2,
+          "name": "Participant 002"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42088652,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1407,
+              "name": "King K. Rool"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088653,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088654,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 5,
+        "entrant1Score": null,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 5
+            },
+            "character": {
+              "id": 1292,
+              "name": "Inkling"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 2
+            },
+            "character": {
+              "id": 1453,
+              "name": "Joker"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671162,
+    "identifier": "BA",
+    "round": 11,
+    "fullRoundText": "Round 11",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": null,
+    "completedAt": 1793672806,
+    "updatedAt": 1793672816,
+    "winnerId": 3,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42514603",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 8,
+          "name": "Participant 008"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": -1
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509640",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 3,
+          "name": "Participant 003"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": null
+            }
+          }
+        }
+      }
+    ],
+    "games": null
+  },
+  {
+    "id": 109671163,
+    "identifier": "BB",
+    "round": 11,
+    "fullRoundText": "Round 11",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793676946,
+    "completedAt": 1793677990,
+    "updatedAt": 1793677991,
+    "winnerId": 6,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42505794",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 10,
+          "name": "Participant 010"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 2
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42509422",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 6,
+          "name": "Participant 006"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42090644,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": 0,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1326,
+              "name": "Roy"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1341,
+              "name": "Zero Suit Samus"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090645,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 10,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1326,
+              "name": "Roy"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1304,
+              "name": "Marth"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090646,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1326,
+              "name": "Roy"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1304,
+              "name": "Marth"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090647,
+        "orderNum": 4,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1526,
+              "name": "Hero"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1304,
+              "name": "Marth"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42090648,
+        "orderNum": 5,
+        "state": 3,
+        "winnerId": 6,
+        "entrant1Score": 0,
+        "entrant2Score": null,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 10
+            },
+            "character": {
+              "id": 1326,
+              "name": "Roy"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 6
+            },
+            "character": {
+              "id": 1304,
+              "name": "Marth"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109671164,
+    "identifier": "BC",
+    "round": 11,
+    "fullRoundText": "Round 11",
+    "state": 3,
+    "bestOf": 3,
+    "totalGames": 5,
+    "setGamesType": 1,
+    "hasPlaceholder": false,
+    "startedAt": 1793674507,
+    "completedAt": 1793674521,
+    "updatedAt": 1793674522,
+    "winnerId": 9,
+    "wPlacement": null,
+    "lPlacement": null,
+    "phaseGroup": {
+      "id": 3518913
+    },
+    "slots": [
+      {
+        "slotIndex": 0,
+        "prereqType": "seed",
+        "prereqId": "42506300",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 9,
+          "name": "Participant 009"
+        },
+        "standing": {
+          "placement": 1,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "slotIndex": 1,
+        "prereqType": "seed",
+        "prereqId": "42508118",
+        "prereqPlacement": null,
+        "entrant": {
+          "id": 7,
+          "name": "Participant 007"
+        },
+        "standing": {
+          "placement": 2,
+          "stats": {
+            "score": {
+              "label": "Score",
+              "value": 0
+            }
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "id": 42088817,
+        "orderNum": 1,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088818,
+        "orderNum": 2,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      },
+      {
+        "id": 42088819,
+        "orderNum": 3,
+        "state": 3,
+        "winnerId": 9,
+        "entrant1Score": null,
+        "entrant2Score": 0,
+        "stage": null,
+        "selections": [
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 9
+            },
+            "character": {
+              "id": 1280,
+              "name": "Donkey Kong"
+            }
+          },
+          {
+            "selectionType": "CHARACTER",
+            "orderNum": null,
+            "entrant": {
+              "id": 7
+            },
+            "character": {
+              "id": 1285,
+              "name": "Falco"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

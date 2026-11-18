@@ -1,0 +1,178 @@
+[
+  {
+    "id": 3519213,
+    "displayIdentifier": "1",
+    "bracketType": "SWISS",
+    "state": 3,
+    "numRounds": 4,
+    "startAt": 1794443400,
+    "rounds": [
+      {
+        "id": 4087732,
+        "number": 1,
+        "bestOf": 5
+      },
+      {
+        "id": 4087733,
+        "number": 2,
+        "bestOf": 5
+      },
+      {
+        "id": 4087734,
+        "number": 3,
+        "bestOf": 5
+      },
+      {
+        "id": 4087735,
+        "number": 4,
+        "bestOf": 5
+      },
+      {
+        "id": 4087736,
+        "number": -4,
+        "bestOf": 5
+      },
+      {
+        "id": 4087737,
+        "number": -8,
+        "bestOf": 5
+      },
+      {
+        "id": 4087738,
+        "number": -7,
+        "bestOf": 5
+      },
+      {
+        "id": 4087739,
+        "number": -6,
+        "bestOf": 5
+      },
+      {
+        "id": 4087740,
+        "number": -5,
+        "bestOf": 5
+      },
+      {
+        "id": 4087741,
+        "number": 5,
+        "bestOf": null
+      }
+    ],
+    "progressionsOut": [
+      {
+        "id": 14654975,
+        "originPlacement": 1,
+        "originPhaseGroup": {
+          "id": 3519213
+        }
+      },
+      {
+        "id": 14654976,
+        "originPlacement": 2,
+        "originPhaseGroup": {
+          "id": 3519213
+        }
+      },
+      {
+        "id": 14654977,
+        "originPlacement": 3,
+        "originPhaseGroup": {
+          "id": 3519213
+        }
+      },
+      {
+        "id": 14654978,
+        "originPlacement": 4,
+        "originPhaseGroup": {
+          "id": 3519213
+        }
+      },
+      {
+        "id": 14654979,
+        "originPlacement": 6,
+        "originPhaseGroup": {
+          "id": 3519213
+        }
+      },
+      {
+        "id": 14654980,
+        "originPlacement": 5,
+        "originPhaseGroup": {
+          "id": 3519213
+        }
+      },
+      {
+        "id": 14654981,
+        "originPlacement": 7,
+        "originPhaseGroup": {
+          "id": 3519213
+        }
+      },
+      {
+        "id": 14654982,
+        "originPlacement": 8,
+        "originPhaseGroup": {
+          "id": 3519213
+        }
+      }
+    ],
+    "phaseId": 2446644
+  },
+  {
+    "id": 3519214,
+    "displayIdentifier": "1",
+    "bracketType": "DOUBLE_ELIMINATION",
+    "state": 3,
+    "numRounds": null,
+    "startAt": 1794448380,
+    "rounds": [
+      {
+        "id": 4087742,
+        "number": 1,
+        "bestOf": 5
+      },
+      {
+        "id": 4087743,
+        "number": 2,
+        "bestOf": 5
+      },
+      {
+        "id": 4087744,
+        "number": 3,
+        "bestOf": 5
+      },
+      {
+        "id": 4087745,
+        "number": -1,
+        "bestOf": 5
+      },
+      {
+        "id": 4087746,
+        "number": -2,
+        "bestOf": 5
+      },
+      {
+        "id": 4087747,
+        "number": -3,
+        "bestOf": 5
+      },
+      {
+        "id": 4087748,
+        "number": -4,
+        "bestOf": 5
+      },
+      {
+        "id": 4087749,
+        "number": -5,
+        "bestOf": 5
+      },
+      {
+        "id": 4087750,
+        "number": -6,
+        "bestOf": 5
+      }
+    ],
+    "progressionsOut": null,
+    "phaseId": 2446645
+  }
+]
