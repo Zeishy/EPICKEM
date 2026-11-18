@@ -1,0 +1,43 @@
+{
+  "id": 1747703,
+  "name": "GG Strive Singles",
+  "slug": "tournament/ger-164-the-swisscake-factory/event/gg-strive-singles",
+  "state": "COMPLETED",
+  "type": 1,
+  "numEntrants": 21,
+  "startAt": 1794443400,
+  "updatedAt": 1794454454,
+  "teamRosterSize": null,
+  "videogame": {
+    "id": 33945,
+    "name": "Guilty Gear: Strive",
+    "displayName": "Guilty Gear: Strive"
+  },
+  "tournament": {
+    "id": 971147,
+    "name": "GER#164 - The Swisscake Factory",
+    "slug": "tournament/ger-164-the-swisscake-factory"
+  },
+  "phases": [
+    {
+      "id": 2446644,
+      "name": "Swiss Rounds",
+      "phaseOrder": 1,
+      "bracketType": "SWISS",
+      "state": "COMPLETED",
+      "numSeeds": 21,
+      "groupCount": 1,
+      "isExhibition": false
+    },
+    {
+      "id": 2446645,
+      "name": "Final Bracket",
+      "phaseOrder": 2,
+      "bracketType": "DOUBLE_ELIMINATION",
+      "state": "COMPLETED",
+      "numSeeds": 8,
+      "groupCount": 1,
+      "isExhibition": false
+    }
+  ]
+}

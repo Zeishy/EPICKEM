@@ -1,0 +1,366 @@
+[
+  {
+    "id": 42633769,
+    "seedNum": 9,
+    "groupSeedNum": 9,
+    "placement": 1,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 1,
+      "name": "Participant 001"
+    }
+  },
+  {
+    "id": 42628060,
+    "seedNum": 4,
+    "groupSeedNum": 4,
+    "placement": 2,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 2,
+      "name": "Participant 002"
+    }
+  },
+  {
+    "id": 42634465,
+    "seedNum": 14,
+    "groupSeedNum": 14,
+    "placement": 3,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 10,
+      "name": "Participant 010"
+    }
+  },
+  {
+    "id": 42633897,
+    "seedNum": 12,
+    "groupSeedNum": 12,
+    "placement": 4,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 5,
+      "name": "Participant 005"
+    }
+  },
+  {
+    "id": 42636858,
+    "seedNum": 21,
+    "groupSeedNum": 21,
+    "placement": 5,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 3,
+      "name": "Participant 003"
+    }
+  },
+  {
+    "id": 42629851,
+    "seedNum": 6,
+    "groupSeedNum": 6,
+    "placement": 6,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 4,
+      "name": "Participant 004"
+    }
+  },
+  {
+    "id": 42634066,
+    "seedNum": 13,
+    "groupSeedNum": 13,
+    "placement": 7,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 7,
+      "name": "Participant 007"
+    }
+  },
+  {
+    "id": 42636485,
+    "seedNum": 20,
+    "groupSeedNum": 20,
+    "placement": 8,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 6,
+      "name": "Participant 006"
+    }
+  },
+  {
+    "id": 42634645,
+    "seedNum": 16,
+    "groupSeedNum": 16,
+    "placement": 9,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 13,
+      "name": "Participant 013"
+    }
+  },
+  {
+    "id": 42633873,
+    "seedNum": 2,
+    "groupSeedNum": 2,
+    "placement": 10,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 9,
+      "name": "Participant 009"
+    }
+  },
+  {
+    "id": 42636220,
+    "seedNum": 19,
+    "groupSeedNum": 19,
+    "placement": 11,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 18,
+      "name": "Participant 018"
+    }
+  },
+  {
+    "id": 42636099,
+    "seedNum": 18,
+    "groupSeedNum": 18,
+    "placement": 12,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 16,
+      "name": "Participant 016"
+    }
+  },
+  {
+    "id": 42594232,
+    "seedNum": 1,
+    "groupSeedNum": 1,
+    "placement": 13,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 8,
+      "name": "Participant 008"
+    }
+  },
+  {
+    "id": 42635388,
+    "seedNum": 17,
+    "groupSeedNum": 17,
+    "placement": 14,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 15,
+      "name": "Participant 015"
+    }
+  },
+  {
+    "id": 42632333,
+    "seedNum": 7,
+    "groupSeedNum": 7,
+    "placement": 15,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 17,
+      "name": "Participant 017"
+    }
+  },
+  {
+    "id": 42627989,
+    "seedNum": 3,
+    "groupSeedNum": 3,
+    "placement": 16,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 11,
+      "name": "Participant 011"
+    }
+  },
+  {
+    "id": 42629601,
+    "seedNum": 5,
+    "groupSeedNum": 5,
+    "placement": 17,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 14,
+      "name": "Participant 014"
+    }
+  },
+  {
+    "id": 42634624,
+    "seedNum": 15,
+    "groupSeedNum": 15,
+    "placement": 20,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519213
+    },
+    "entrant": {
+      "id": 12,
+      "name": "Participant 012"
+    }
+  },
+  {
+    "id": 42508251,
+    "seedNum": 3,
+    "groupSeedNum": 3,
+    "placement": 1,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519214
+    },
+    "entrant": {
+      "id": 10,
+      "name": "Participant 010"
+    }
+  },
+  {
+    "id": 42508249,
+    "seedNum": 1,
+    "groupSeedNum": 1,
+    "placement": 2,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519214
+    },
+    "entrant": {
+      "id": 1,
+      "name": "Participant 001"
+    }
+  },
+  {
+    "id": 42508250,
+    "seedNum": 2,
+    "groupSeedNum": 2,
+    "placement": 3,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519214
+    },
+    "entrant": {
+      "id": 2,
+      "name": "Participant 002"
+    }
+  },
+  {
+    "id": 42508254,
+    "seedNum": 6,
+    "groupSeedNum": 6,
+    "placement": 4,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519214
+    },
+    "entrant": {
+      "id": 3,
+      "name": "Participant 003"
+    }
+  },
+  {
+    "id": 42508252,
+    "seedNum": 4,
+    "groupSeedNum": 4,
+    "placement": 5,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519214
+    },
+    "entrant": {
+      "id": 5,
+      "name": "Participant 005"
+    }
+  },
+  {
+    "id": 42508253,
+    "seedNum": 5,
+    "groupSeedNum": 5,
+    "placement": 5,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519214
+    },
+    "entrant": {
+      "id": 4,
+      "name": "Participant 004"
+    }
+  },
+  {
+    "id": 42508255,
+    "seedNum": 7,
+    "groupSeedNum": 7,
+    "placement": 7,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519214
+    },
+    "entrant": {
+      "id": 7,
+      "name": "Participant 007"
+    }
+  },
+  {
+    "id": 42508256,
+    "seedNum": 8,
+    "groupSeedNum": 8,
+    "placement": 7,
+    "isBye": false,
+    "phaseGroup": {
+      "id": 3519214
+    },
+    "entrant": {
+      "id": 6,
+      "name": "Participant 006"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": 1747478,
+  "name": "Ultimate Singles",
+  "slug": "tournament/rookie-round-robin-73/event/ultimate-singles",
+  "state": "COMPLETED",
+  "type": 1,
+  "numEntrants": 11,
+  "startAt": 1793665800,
+  "updatedAt": 1793679168,
+  "teamRosterSize": null,
+  "videogame": {
+    "id": 1386,
+    "name": "Super Smash Bros. Ultimate",
+    "displayName": "Ultimate"
+  },
+  "tournament": {
+    "id": 971045,
+    "name": "Rookie Round Robin #73",
+    "slug": "tournament/rookie-round-robin-73"
+  },
+  "phases": [
+    {
+      "id": 2446373,
+      "name": "Ultimate Singles",
+      "phaseOrder": 1,
+      "bracketType": "ROUND_ROBIN",
+      "state": "COMPLETED",
+      "numSeeds": 11,
+      "groupCount": 1,
+      "isExhibition": false
+    }
+  ]
+}
