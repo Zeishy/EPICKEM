@@ -6,3 +6,9 @@ En attendant, les documents écrits ici sont repris tels quels dans le site.
 | Dossier        | Contenu                                                                  |
 | -------------- | ------------------------------------------------------------------------ |
 | [`adr/`](adr/) | Décisions d'architecture : contexte, options, choix retenu, conséquences |
+
+## Notes techniques
+
+| Note                                 | Sujet                                                                 |
+| ------------------------------------ | --------------------------------------------------------------------- |
+| [API start.gg](technique/startgg.md) | Accès, limites, données disponibles, requêtes types, conditions (#14) |

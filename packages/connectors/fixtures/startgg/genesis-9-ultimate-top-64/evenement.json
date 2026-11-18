@@ -1,0 +1,63 @@
+{
+  "id": 769488,
+  "name": "Ultimate Singles",
+  "slug": "tournament/genesis-9-1/event/ultimate-singles",
+  "state": "COMPLETED",
+  "type": 1,
+  "numEntrants": 1215,
+  "startAt": 1674237600,
+  "updatedAt": 1674460265,
+  "teamRosterSize": null,
+  "videogame": {
+    "id": 1386,
+    "name": "Super Smash Bros. Ultimate",
+    "displayName": "Ultimate"
+  },
+  "tournament": {
+    "id": 438800,
+    "name": "Genesis 9",
+    "slug": "tournament/genesis-9-1"
+  },
+  "phases": [
+    {
+      "id": 1188394,
+      "name": "R1 Pools",
+      "phaseOrder": 1,
+      "bracketType": "DOUBLE_ELIMINATION",
+      "state": "COMPLETED",
+      "numSeeds": 1215,
+      "groupCount": 64,
+      "isExhibition": false
+    },
+    {
+      "id": 1281314,
+      "name": "R2 Pools",
+      "phaseOrder": 5,
+      "bracketType": "DOUBLE_ELIMINATION",
+      "state": "COMPLETED",
+      "numSeeds": 256,
+      "groupCount": 16,
+      "isExhibition": false
+    },
+    {
+      "id": 1276348,
+      "name": "Top 64",
+      "phaseOrder": 2,
+      "bracketType": "DOUBLE_ELIMINATION",
+      "state": "COMPLETED",
+      "numSeeds": 64,
+      "groupCount": 1,
+      "isExhibition": false
+    },
+    {
+      "id": 1276350,
+      "name": "Top 8",
+      "phaseOrder": 4,
+      "bracketType": "DOUBLE_ELIMINATION",
+      "state": "COMPLETED",
+      "numSeeds": 8,
+      "groupCount": 1,
+      "isExhibition": false
+    }
+  ]
+}

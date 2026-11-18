@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1955947,
+    "displayIdentifier": "KL600",
+    "bracketType": "DOUBLE_ELIMINATION",
+    "state": 3,
+    "numRounds": null,
+    "startAt": 1674352800,
+    "rounds": [],
+    "progressionsOut": [
+      {
+        "id": 8331051,
+        "originPlacement": 5,
+        "originPhaseGroup": {
+          "id": 1955947
+        }
+      },
+      {
+        "id": 8331052,
+        "originPlacement": 5,
+        "originPhaseGroup": {
+          "id": 1955947
+        }
+      },
+      {
+        "id": 8331053,
+        "originPlacement": 5,
+        "originPhaseGroup": {
+          "id": 1955947
+        }
+      },
+      {
+        "id": 8331054,
+        "originPlacement": 5,
+        "originPhaseGroup": {
+          "id": 1955947
+        }
+      },
+      {
+        "id": 8331055,
+        "originPlacement": 7,
+        "originPhaseGroup": {
+          "id": 1955947
+        }
+      },
+      {
+        "id": 8331056,
+        "originPlacement": 7,
+        "originPhaseGroup": {
+          "id": 1955947
+        }
+      },
+      {
+        "id": 8331057,
+        "originPlacement": 7,
+        "originPhaseGroup": {
+          "id": 1955947
+        }
+      },
+      {
+        "id": 8331058,
+        "originPlacement": 7,
+        "originPhaseGroup": {
+          "id": 1955947
+        }
+      }
+    ],
+    "phaseId": 1276348
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "placement": 1,
+    "isFinal": true,
+    "entrant": {
+      "id": 5,
+      "name": "Participant 005"
+    }
+  },
+  {
+    "placement": 2,
+    "isFinal": true,
+    "entrant": {
+      "id": 11,
+      "name": "Participant 011"
+    }
+  },
+  {
+    "placement": 3,
+    "isFinal": true,
+    "entrant": {
+      "id": 9,
+      "name": "Participant 009"
+    }
+  },
+  {
+    "placement": 4,
+    "isFinal": true,
+    "entrant": {
+      "id": 3,
+      "name": "Participant 003"
+    }
+  },
+  {
+    "placement": 5,
+    "isFinal": true,
+    "entrant": {
+      "id": 1,
+      "name": "Participant 001"
+    }
+  },
+  {
+    "placement": 6,
+    "isFinal": true,
+    "entrant": {
+      "id": 2,
+      "name": "Participant 002"
+    }
+  },
+  {
+    "placement": 7,
+    "isFinal": true,
+    "entrant": {
+      "id": 10,
+      "name": "Participant 010"
+    }
+  },
+  {
+    "placement": 8,
+    "isFinal": true,
+    "entrant": {
+      "id": 7,
+      "name": "Participant 007"
+    }
+  },
+  {
+    "placement": 9,
+    "isFinal": true,
+    "entrant": {
+      "id": 6,
+      "name": "Participant 006"
+    }
+  },
+  {
+    "placement": 10,
+    "isFinal": true,
+    "entrant": {
+      "id": 8,
+      "name": "Participant 008"
+    }
+  },
+  {
+    "placement": 11,
+    "isFinal": true,
+    "entrant": {
+      "id": 4,
+      "name": "Participant 004"
+    }
+  }
+]
