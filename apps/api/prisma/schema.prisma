@@ -1,0 +1,389 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum TournoiFormat {
+  SINGLE_ELIMINATION
+  DOUBLE_ELIMINATION
+  GROUP_STAGE
+  SWISS
+  FFA
+}
+
+enum TournoiStatut {
+  DRAFT
+  UPCOMING
+  LIVE
+  COMPLETED
+  ARCHIVED
+}
+
+enum EtapeType {
+  QUALIFICATION
+  GROUP_STAGE
+  PLAYOFF
+  GRAND_FINAL
+}
+
+enum EtapeStatut {
+  UPCOMING
+  LIVE
+  COMPLETED
+}
+
+enum MatchStatut {
+  SCHEDULED
+  LIVE
+  COMPLETED
+  FORFEIT
+  CANCELED
+}
+
+enum InscriptionStatut {
+  PENDING
+  CONFIRMED
+  REJECTED
+  WITHDRAWN
+}
+
+enum QuestionType {
+  MATCH_WINNER
+  SCORE_EXACT
+  BONUS
+}
+
+enum PronosticStatut {
+  SUBMITTED
+  LOCKED
+  SCORED
+  CANCELED
+}
+
+enum SourceProvider {
+  START_GG
+  FILE_IMPORT
+  MANUAL
+}
+
+enum StatistiqueCible {
+  TOURNOI
+  ETAPE
+  MATCH
+  EQUIPE
+  JOUEUR
+}
+
+model Jeu {
+  id        String    @id @default(cuid())
+  slug      String    @unique
+  nom       String
+  editeur   String?
+  tournois  Tournoi[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@map("jeux")
+}
+
+model Statistique {
+  id        String           @id @default(cuid())
+  cibleType StatistiqueCible
+  cibleId   String
+  cle       String
+  valeur    Json
+  tournoi   Tournoi?         @relation(fields: [tournoiId], references: [id], onDelete: SetNull)
+  tournoiId String?
+  etape     Etape?           @relation(fields: [etapeId], references: [id], onDelete: SetNull)
+  etapeId   String?
+  match     Match?           @relation(fields: [matchId], references: [id], onDelete: SetNull)
+  matchId   String?
+  equipe    Equipe?          @relation(fields: [equipeId], references: [id], onDelete: SetNull)
+  equipeId  String?
+  joueur    Joueur?          @relation(fields: [joueurId], references: [id], onDelete: SetNull)
+  joueurId  String?
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  @@unique([cibleType, cibleId, cle])
+  @@index([tournoiId])
+  @@index([etapeId])
+  @@index([matchId])
+  @@index([equipeId])
+  @@index([joueurId])
+  @@map("statistiques")
+}
+
+model Tournoi {
+  id           String        @id @default(cuid())
+  jeu          Jeu           @relation(fields: [jeuId], references: [id], onDelete: Restrict)
+  jeuId        String
+  source       Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  sourceId     String?
+  nom          String
+  slug         String        @unique
+  format       TournoiFormat
+  statut       TournoiStatut @default(DRAFT)
+  commenceAt   DateTime?
+  termineAt    DateTime?
+  etapes       Etape[]
+  inscriptions Inscription[]
+  questions    Question[]
+  classements  Classement[]
+  statistiques Statistique[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@index([jeuId])
+  @@index([sourceId])
+  @@map("tournois")
+}
+
+model Etape {
+  id           String        @id @default(cuid())
+  tournoi      Tournoi       @relation(fields: [tournoiId], references: [id], onDelete: Cascade)
+  tournoiId    String
+  nom          String
+  ordre        Int
+  type         EtapeType
+  statut       EtapeStatut   @default(UPCOMING)
+  commenceAt   DateTime?
+  termineAt    DateTime?
+  matchs       Match[]
+  questions    Question[]
+  classements  Classement[]
+  statistiques Statistique[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@unique([tournoiId, ordre])
+  @@index([tournoiId])
+  @@map("etapes")
+}
+
+model Match {
+  id               String        @id @default(cuid())
+  etape            Etape         @relation(fields: [etapeId], references: [id], onDelete: Cascade)
+  etapeId          String
+  source           Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  sourceId         String?
+  parentMatch      Match?        @relation("MatchTree", fields: [parentMatchId], references: [id], onDelete: SetNull)
+  parentMatchId    String?
+  matchsEnfants    Match[]       @relation("MatchTree")
+  equipeA          Equipe?       @relation("MatchEquipeA", fields: [equipeAId], references: [id], onDelete: SetNull)
+  equipeAId        String?
+  equipeB          Equipe?       @relation("MatchEquipeB", fields: [equipeBId], references: [id], onDelete: SetNull)
+  equipeBId        String?
+  equipeGagnante   Equipe?       @relation("MatchEquipeGagnante", fields: [equipeGagnanteId], references: [id], onDelete: SetNull)
+  equipeGagnanteId String?
+  ordre            Int
+  bestOf           Int           @default(1)
+  statut           MatchStatut   @default(SCHEDULED)
+  commenceAt       DateTime?
+  termineAt        DateTime?
+  manches          Manche[]
+  questions        Question[]
+  statistiques     Statistique[]
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  @@unique([etapeId, ordre])
+  @@index([etapeId])
+  @@index([sourceId])
+  @@index([parentMatchId])
+  @@index([equipeAId])
+  @@index([equipeBId])
+  @@index([equipeGagnanteId])
+  @@map("matchs")
+}
+
+model Manche {
+  id               String    @id @default(cuid())
+  match            Match     @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  matchId          String
+  numero           Int
+  scoreEquipeA     Int       @default(0)
+  scoreEquipeB     Int       @default(0)
+  equipeGagnante   Equipe?   @relation(fields: [equipeGagnanteId], references: [id], onDelete: SetNull)
+  equipeGagnanteId String?
+  joueAt           DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  @@unique([matchId, numero])
+  @@index([matchId])
+  @@index([equipeGagnanteId])
+  @@map("manches")
+}
+
+model Equipe {
+  id             String        @id @default(cuid())
+  source         Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  sourceId       String?
+  nom            String
+  tag            String?
+  logoUrl        String?
+  joueurs        Joueur[]
+  inscriptions   Inscription[]
+  matchsEquipeA  Match[]       @relation("MatchEquipeA")
+  matchsEquipeB  Match[]       @relation("MatchEquipeB")
+  matchsGagnes   Match[]       @relation("MatchEquipeGagnante")
+  manchesGagnees Manche[]
+  statistiques   Statistique[]
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  @@index([sourceId])
+  @@index([nom])
+  @@map("equipes")
+}
+
+model Joueur {
+  id           String        @id @default(cuid())
+  source       Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  sourceId     String?
+  equipe       Equipe?       @relation(fields: [equipeId], references: [id], onDelete: SetNull)
+  equipeId     String?
+  pseudo       String
+  nomAffiche   String?
+  role         String?
+  nationalite  String?
+  inscriptions Inscription[]
+  statistiques Statistique[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@index([sourceId])
+  @@index([equipeId])
+  @@index([pseudo])
+  @@map("joueurs")
+}
+
+model Inscription {
+  id          String            @id @default(cuid())
+  tournoi     Tournoi           @relation(fields: [tournoiId], references: [id], onDelete: Cascade)
+  tournoiId   String
+  equipe      Equipe?           @relation(fields: [equipeId], references: [id], onDelete: SetNull)
+  equipeId    String?
+  joueur      Joueur?           @relation(fields: [joueurId], references: [id], onDelete: SetNull)
+  joueurId    String?
+  seed        Int?
+  statut      InscriptionStatut @default(PENDING)
+  inscritAt   DateTime          @default(now())
+  pronostics  Pronostic[]
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  classements Classement[]
+
+  @@unique([tournoiId, equipeId])
+  @@unique([tournoiId, joueurId])
+  @@index([tournoiId])
+  @@index([equipeId])
+  @@index([joueurId])
+  @@map("inscriptions")
+}
+
+model Question {
+  id         String       @id @default(cuid())
+  tournoi    Tournoi?     @relation(fields: [tournoiId], references: [id], onDelete: SetNull)
+  tournoiId  String?
+  etape      Etape?       @relation(fields: [etapeId], references: [id], onDelete: SetNull)
+  etapeId    String?
+  match      Match?       @relation(fields: [matchId], references: [id], onDelete: SetNull)
+  matchId    String?
+  type       QuestionType
+  intitule   String
+  pointsBase Int          @default(0)
+  ouvertAt   DateTime
+  fermeAt    DateTime
+  reponses   Reponse[]
+  pronostics Pronostic[]
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+
+  @@index([tournoiId])
+  @@index([etapeId])
+  @@index([matchId])
+  @@map("questions")
+}
+
+model Reponse {
+  id          String      @id @default(cuid())
+  question    Question    @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  questionId  String
+  code        String
+  libelle     String
+  estCorrecte Boolean?
+  pronostics  Pronostic[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@unique([questionId, code])
+  @@index([questionId])
+  @@map("reponses")
+}
+
+model Pronostic {
+  id            String          @id @default(cuid())
+  inscription   Inscription     @relation(fields: [inscriptionId], references: [id], onDelete: Cascade)
+  inscriptionId String
+  question      Question        @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  questionId    String
+  reponse       Reponse         @relation(fields: [reponseId], references: [id], onDelete: Restrict)
+  reponseId     String
+  statut        PronosticStatut @default(SUBMITTED)
+  pointsObtenus Int             @default(0)
+  soumisAt      DateTime        @default(now())
+  evalueAt      DateTime?
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  @@unique([inscriptionId, questionId])
+  @@index([questionId])
+  @@index([reponseId])
+  @@map("pronostics")
+}
+
+model Classement {
+  id            String      @id @default(cuid())
+  tournoi       Tournoi     @relation(fields: [tournoiId], references: [id], onDelete: Cascade)
+  tournoiId     String
+  etape         Etape?      @relation(fields: [etapeId], references: [id], onDelete: SetNull)
+  etapeId       String?
+  inscription   Inscription @relation(fields: [inscriptionId], references: [id], onDelete: Cascade)
+  inscriptionId String
+  points        Int         @default(0)
+  rang          Int
+  calculeAt     DateTime    @default(now())
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@unique([tournoiId, etapeId, inscriptionId])
+  @@index([tournoiId, rang])
+  @@index([etapeId])
+  @@index([inscriptionId])
+  @@map("classements")
+}
+
+model Source {
+  id            String         @id @default(cuid())
+  provider      SourceProvider
+  externalId    String
+  url           String?
+  payload       Json?
+  synchroniseAt DateTime?
+  tournois      Tournoi[]
+  matchs        Match[]
+  equipes       Equipe[]
+  joueurs       Joueur[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@unique([provider, externalId])
+  @@index([provider])
+  @@map("sources")
+}

@@ -2,6 +2,11 @@ packages:
   - apps/*
   - packages/*
 
+allowBuilds:
+  "@prisma/client": true
+  "@prisma/engines": true
+  prisma: true
+
 # Versions partagées : un paquet les référence avec "catalog:".
 catalog:
   "@types/node": ^24.0.0
