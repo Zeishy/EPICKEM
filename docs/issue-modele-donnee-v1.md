@@ -23,6 +23,7 @@ Ce modele doit permettre:
 - [ ] La base cible est PostgreSQL (confirmee par `DATABASE_URL` dans `.env.example`).
 - [ ] Prisma est utilise comme ORM pour definir le schema v1.
 - [ ] Le schema contient les entites suivantes (avec relations): jeu, statistique, tournoi, etape, match, manche, equipe, joueur, inscription, pronostic, question, reponse, classement, source.
+- [ ] Cette liste est un minimum : comptes, participants et resultats complementaires sont ajoutes selon les besoins du sujet.
 - [ ] Une migration initiale est generee et executable en local.
 - [ ] Un diagramme entite-relation est ajoute dans la documentation technique.
 - [ ] Un dictionnaire des champs est ajoute dans la documentation technique.
@@ -37,11 +38,10 @@ Pas d'interface utilisateur dans cette issue. Non applicable.
 
 # Notes techniques
 
-Contexte deduit du repo:
+Contexte du repo:
 
 - Base de donnees: PostgreSQL (`.env.example` -> `DATABASE_URL=postgresql://...`).
-- API: workspace `apps/api`.
-- Aucun dossier Prisma present actuellement: il doit etre initialise dans l'API.
+- API: workspace `apps/api`, avec schema, migration et scripts Prisma.
 
 Emplacements proposes:
 
@@ -49,11 +49,11 @@ Emplacements proposes:
 - Migrations Prisma: `apps/api/prisma/migrations/*`
 - Documentation technique du modele: `docs/technical/data-model-v1.md`
 
-Commandes cibles (a adapter selon scripts ajoutes dans `apps/api/package.json`):
+Commandes de validation:
 
-- `pnpm --filter @epickem/api prisma init`
-- `pnpm --filter @epickem/api prisma migrate dev --name init`
-- `pnpm --filter @epickem/api prisma generate`
+- `pnpm --filter @epickem/api exec prisma validate`
+- `pnpm --filter @epickem/api prisma:generate`
+- `pnpm --filter @epickem/api prisma:deploy` sur une base de test vide.
 
 Proposition de decoupage:
 
@@ -72,8 +72,8 @@ Definition of done specifique:
 
 # Risques / points a trancher
 
-- Niveau de normalisation de `statistique` (table polymorphe vs tables specialisees).
-- Modele de `classement` (snapshot calcule vs vue derivee).
-- Portee de `question/reponse` (questions globales tournoi, match, ou etape).
-- Granularite de `manche` selon formats de jeu differents.
-- Strategie d'unicite joueur/equipe pour imports multi-sources.
+- Statistiques definies par jeu et relevees par manche ; agregats recalculables.
+- Classements d'etape et de pronostiqueurs sous forme de caches recalculables.
+- Question associee exactement a un tournoi, une etape ou un match.
+- Les classements de saison et groupe sont reportes aux issues dediees.
+- Unicite de `sourceId` par type d'entite ; les imports multi-sources restent a preciser.
