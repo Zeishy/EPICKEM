@@ -1,4 +1,4 @@
--- Run against an isolated database after applying the migration.
+-- Exécuter sur une base isolée après application de la migration.
 BEGIN;
 
 INSERT INTO "utilisateurs" ("id", "pseudo", "email", "motDePasseHash", "updatedAt")
@@ -11,6 +11,10 @@ VALUES ('etape', 'tournoi', 'Etape', 1, 'PLAYOFF', 'DOUBLE_ELIMINATION', '{}', n
 INSERT INTO "joueurs" ("id", "pseudo", "updatedAt") VALUES ('joueur', 'competiteur', now());
 INSERT INTO "inscriptions" ("id", "tournoiId", "joueurId", "updatedAt")
 VALUES ('inscription', 'tournoi', 'joueur', now());
+INSERT INTO "classements_etape" ("id", "etapeId", "inscriptionId", "rang", "details", "updatedAt")
+VALUES ('classement', 'etape', 'inscription', 1, '{"victoires": 3, "buchholz": 7}', now());
+INSERT INTO "tournois" ("id", "jeuId", "nom", "slug", "lieu", "visibilite", "modeParticipant", "modePronostic", "tailleEquipeMin", "tailleEquipeMax", "updatedAt")
+VALUES ('equipe', 'jeu', 'Équipe', 'equipe', 'EN_LIGNE', 'PUBLIQUE', 'EQUIPE', 'MATCH', 2, 2, now());
 INSERT INTO "matchs" ("id", "etapeId", "ordre", "tour", "updatedAt")
 VALUES ('winner', 'etape', 1, 2, now()), ('loser', 'etape', 2, 2, now()), ('initial', 'etape', 3, 1, now()),
        ('question-match', 'etape', 4, 1, now());
@@ -49,65 +53,93 @@ BEGIN
   BEGIN
     INSERT INTO "questions" ("id", "modele", "intitule", "configResolution", "ouvertAt", "fermeAt", "updatedAt")
     VALUES ('no-scope', 'MODELE_PERSONNALISE', 'X', '{}', now(), now(), now());
-    RAISE EXCEPTION 'question without scope accepted';
+    RAISE EXCEPTION 'question sans portée acceptée';
   EXCEPTION WHEN check_violation THEN NULL;
   END;
   BEGIN
     INSERT INTO "questions" ("id", "tournoiId", "matchId", "modele", "intitule", "configResolution", "ouvertAt", "fermeAt", "updatedAt")
     VALUES ('invalid-scope', 'tournoi', 'initial', 'MODELE_PERSONNALISE', 'X', '{}', now(), now(), now());
-    RAISE EXCEPTION 'question with multiple scopes accepted';
+    RAISE EXCEPTION 'question avec plusieurs portées acceptée';
   EXCEPTION WHEN check_violation THEN NULL;
   END;
   BEGIN
     UPDATE "reponses_pickem" SET "reponseId" = 'r2' WHERE "id" = 'pick1';
-    RAISE EXCEPTION 'answer from another question accepted';
+    RAISE EXCEPTION 'réponse issue d''une autre question acceptée';
   EXCEPTION WHEN foreign_key_violation THEN NULL;
   END;
   BEGIN
     UPDATE "reponses_pickem" SET "valeur" = '3' WHERE "id" = 'pick1';
-    RAISE EXCEPTION 'two answer forms accepted';
+    RAISE EXCEPTION 'deux formes de réponse acceptées';
   EXCEPTION WHEN check_violation THEN NULL;
   END;
   BEGIN
     INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "updatedAt")
     VALUES ('invalid-resultat', 'manche', 'initial', 'autre', now());
-    RAISE EXCEPTION 'participant from another match accepted';
+    RAISE EXCEPTION 'participant issu d''un autre match accepté';
   EXCEPTION WHEN foreign_key_violation THEN NULL;
   END;
   BEGIN
     INSERT INTO "classements_pronostiqueurs" ("id", "utilisateurId", "rang", "updatedAt")
     VALUES ('general-duplicate', 'user', 2, now());
-    RAISE EXCEPTION 'duplicate general ranking accepted';
+    RAISE EXCEPTION 'classement général en double accepté';
   EXCEPTION WHEN unique_violation THEN NULL;
   END;
   BEGIN
     INSERT INTO "statistique_valeurs" ("id", "mancheId", "definitionId", "valeur", "updatedAt")
     VALUES ('duplicate-stat', 'manche', 'definition', '6', now());
-    RAISE EXCEPTION 'duplicate statistic accepted';
+    RAISE EXCEPTION 'statistique en double acceptée';
   EXCEPTION WHEN unique_violation THEN NULL;
   END;
   BEGIN
     INSERT INTO "statistique_valeurs" ("id", "mancheId", "definitionId", "inscriptionId", "joueurId", "valeur", "updatedAt")
     VALUES ('duplicate-stat-membre', 'manche', 'definition', 'inscription', 'joueur', '6', now());
-    RAISE EXCEPTION 'duplicate member statistic accepted';
+    RAISE EXCEPTION 'statistique de membre en double acceptée';
   EXCEPTION WHEN unique_violation THEN NULL;
   END;
   BEGIN
     INSERT INTO "pronostic_participants" ("id", "pronosticId", "matchOrigineId", "resultatOrigine", "slot", "placement", "updatedAt")
     VALUES ('second-winner', 'pronostic', 'initial', 'PERDANT', 2, 1, now());
-    RAISE EXCEPTION 'duplicate winner accepted';
+    RAISE EXCEPTION 'vainqueur en double accepté';
   EXCEPTION WHEN unique_violation THEN NULL;
   END;
   BEGIN
     UPDATE "matchs" SET "slotSuivantVainqueur" = NULL WHERE "id" = 'initial';
-    RAISE EXCEPTION 'partial bracket destination accepted';
+    RAISE EXCEPTION 'destination d''arbre incomplète acceptée';
   EXCEPTION WHEN check_violation THEN NULL;
   END;
   BEGIN
     DELETE FROM "reponses" WHERE "id" = 'r1';
-    RAISE EXCEPTION 'used answer deleted';
+    RAISE EXCEPTION 'réponse utilisée supprimée';
   EXCEPTION WHEN foreign_key_violation THEN NULL;
   END;
+  BEGIN
+    UPDATE "tournois" SET "tailleEquipeMin" = NULL WHERE "id" = 'equipe';
+    RAISE EXCEPTION 'taille minimale manquante acceptée';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    UPDATE "tournois" SET "tailleEquipeMax" = NULL WHERE "id" = 'equipe';
+    RAISE EXCEPTION 'taille maximale manquante acceptée';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    UPDATE "tournois" SET "tailleEquipeMin" = 3, "tailleEquipeMax" = 2 WHERE "id" = 'equipe';
+    RAISE EXCEPTION 'bornes de taille inversées acceptées';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    UPDATE "tournois" SET "tailleEquipeMin" = 3, "tailleEquipeMax" = 2 WHERE "id" = 'tournoi';
+    RAISE EXCEPTION 'bornes de taille inversées acceptées en solo';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    UPDATE "matchs" SET "bestOf" = 0 WHERE "id" = 'initial';
+    RAISE EXCEPTION 'bestOf inférieur à un accepté';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  IF (SELECT "details"->>'buchholz' FROM "classements_etape" WHERE "id" = 'classement') <> '7' THEN
+    RAISE EXCEPTION 'détails de départage incorrects';
+  END IF;
 END $$;
 
 DELETE FROM "matchs" WHERE "id" = 'question-match';
@@ -116,7 +148,7 @@ DO $$
 BEGIN
   IF EXISTS (SELECT 1 FROM "questions" WHERE "id" IN ('q1', 'q2'))
     OR EXISTS (SELECT 1 FROM "reponses_pickem" WHERE "id" IN ('pick1', 'pick2')) THEN
-    RAISE EXCEPTION 'match question cascade failed';
+    RAISE EXCEPTION 'suppression en cascade des questions du match échouée';
   END IF;
 END $$;
 
@@ -125,7 +157,7 @@ DELETE FROM "tournois" WHERE "id" = 'tournoi';
 DO $$
 BEGIN
   IF EXISTS (SELECT 1 FROM "matchs" WHERE "etapeId" = 'etape') THEN
-    RAISE EXCEPTION 'tournament cascade failed';
+    RAISE EXCEPTION 'suppression en cascade du tournoi échouée';
   END IF;
 END $$;
 

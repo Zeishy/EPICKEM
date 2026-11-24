@@ -70,6 +70,8 @@ Toutes les entités ont `id` (clé primaire CUID), `createdAt` (date de créatio
 
 Un joueur importé peut ne pas avoir de compte ; un spectateur peut pronostiquer sans inscription.
 
+L'unicité de `email` et `pseudo` est actuellement sensible à la casse. Le choix entre normalisation applicative et unicité insensible à la casse en base est reporté à l'authentification (#17).
+
 ### Jeu et statistiques
 
 | Entité                | Champ         | Type            | Description                                 |
@@ -205,19 +207,20 @@ Le registre de modèles de l'issue #60 validera `Question.modele` et couvrira le
 
 ### Classements et sources
 
-| Entité                                   | Champ                  | Type           | Description                                       |
-| ---------------------------------------- | ---------------------- | -------------- | ------------------------------------------------- |
-| ClassementEtape                          | etapeId, inscriptionId | String         | FK ; paire unique                                 |
-| ClassementPronostiqueur                  | utilisateurId          | String         | FK vers Utilisateur                               |
-| ClassementPronostiqueur                  | tournoiId              | String?        | FK vers Tournoi ; NULL pour le classement général |
-| ClassementEtape, ClassementPronostiqueur | points                 | Int            | Points calculés, défaut 0                         |
-| ClassementEtape, ClassementPronostiqueur | rang                   | Int            | Rang calculé                                      |
-| ClassementEtape, ClassementPronostiqueur | calculeAt              | DateTime       | Date du calcul, défaut `now()`                    |
-| Source                                   | provider               | SourceProvider | `START_GG`, `FILE_IMPORT`, `MANUAL`               |
-| Source                                   | externalId             | String         | Unique avec provider                              |
-| Source                                   | url                    | String?        | URL de la donnée publique                         |
-| Source                                   | payload                | Json?          | Données brutes importées                          |
-| Source                                   | synchroniseAt          | DateTime?      | Dernière synchronisation                          |
+| Entité                                   | Champ                  | Type           | Description                                                      |
+| ---------------------------------------- | ---------------------- | -------------- | ---------------------------------------------------------------- |
+| ClassementEtape                          | etapeId, inscriptionId | String         | FK ; paire unique                                                |
+| ClassementEtape                          | details                | Json?          | Détails calculés de départage, par exemple victoires ou Buchholz |
+| ClassementPronostiqueur                  | utilisateurId          | String         | FK vers Utilisateur                                              |
+| ClassementPronostiqueur                  | tournoiId              | String?        | FK vers Tournoi ; NULL pour le classement général                |
+| ClassementEtape, ClassementPronostiqueur | points                 | Int            | Points calculés, défaut 0                                        |
+| ClassementEtape, ClassementPronostiqueur | rang                   | Int            | Rang calculé                                                     |
+| ClassementEtape, ClassementPronostiqueur | calculeAt              | DateTime       | Date du calcul, défaut `now()`                                   |
+| Source                                   | provider               | SourceProvider | `START_GG`, `FILE_IMPORT`, `MANUAL`                              |
+| Source                                   | externalId             | String         | Unique avec provider                                             |
+| Source                                   | url                    | String?        | URL de la donnée publique                                        |
+| Source                                   | payload                | Json?          | Données brutes importées                                         |
+| Source                                   | synchroniseAt          | DateTime?      | Dernière synchronisation                                         |
 
 Les classements sont des caches recalculables. Un index partiel garantit une seule ligne générale par utilisateur. Les classements de saison et de groupe sont reportés aux issues #47 et #67. `sourceId` est unique dans chaque table importable ; l'application doit également éviter de réutiliser une même source entre types d'entités.
 
@@ -227,8 +230,12 @@ Les contraintes de clés étrangères et d'unicité ne suffisent pas à exprimer
 
 - la cohérence tournoi/étape/match/inscription, le jeu de la définition statistique et la participation des joueurs ;
 - le type et les options des valeurs statistiques et réponses JSON, et la structure des configurations ;
-- les tailles d'équipe, l'effectif, les dates, les scores, les rangs, et les transitions de statut ;
+- les valeurs positives des tailles d'équipe, l'effectif, les dates, les scores, les rangs, et les transitions de statut ;
 - la cohérence et l'absence de cycle dans l'arbre, ainsi que l'origine des participants prédits.
+
+La base exige les deux bornes de taille pour les tournois en équipe, leur ordre croissant si elles sont renseignées, et `bestOf >= 1`.
+
+Le projet utilise Prisma 6.19.3 via le lockfile. Une future migration vers Prisma 7 devra notamment adapter `prisma.config.ts`, le générateur et la configuration de connexion ; elle est hors du périmètre de cette version.
 
 Les tables Saison, Groupe, JournalAudit, HistoriquePoints, Badge, Titre, Litige, DeclarationResultat, Notification, lot d'import et modèle de tournoi restent dans leurs issues dédiées.
 

@@ -360,6 +360,7 @@ CREATE TABLE "classements_etape" (
     "inscriptionId" TEXT NOT NULL,
     "points" INTEGER NOT NULL DEFAULT 0,
     "rang" INTEGER NOT NULL,
+    "details" JSONB,
     "calculeAt" TIMESTAMPTZ(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "createdAt" TIMESTAMPTZ(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMPTZ(3) NOT NULL,
@@ -690,6 +691,13 @@ ALTER TABLE "classements_pronostiqueurs" ADD CONSTRAINT "classements_pronostique
 ALTER TABLE "classements_pronostiqueurs" ADD CONSTRAINT "classements_pronostiqueurs_tournoiId_fkey" FOREIGN KEY ("tournoiId") REFERENCES "tournois"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- PostgreSQL constraints not expressible in Prisma.
+ALTER TABLE "tournois" ADD CONSTRAINT "tournois_taille_equipe_check" CHECK (
+    ("modeParticipant" <> 'EQUIPE' OR ("tailleEquipeMin" IS NOT NULL AND "tailleEquipeMax" IS NOT NULL)) AND
+    ("tailleEquipeMin" IS NULL OR "tailleEquipeMax" IS NULL OR "tailleEquipeMin" <= "tailleEquipeMax")
+);
+
+ALTER TABLE "matchs" ADD CONSTRAINT "matchs_best_of_check" CHECK ("bestOf" >= 1);
+
 ALTER TABLE "inscriptions" ADD CONSTRAINT "inscriptions_equipe_xor_joueur_check"
     CHECK (num_nonnulls("equipeId", "joueurId") = 1);
 
