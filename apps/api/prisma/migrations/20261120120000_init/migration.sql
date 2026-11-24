@@ -44,9 +44,6 @@ CREATE TYPE "InscriptionStatut" AS ENUM ('PENDING', 'CONFIRMED', 'WAITLISTED', '
 CREATE TYPE "MembreRole" AS ENUM ('TITULAIRE', 'REMPLACANT');
 
 -- CreateEnum
-CREATE TYPE "QuestionType" AS ENUM ('MATCH_WINNER', 'SCORE_EXACT', 'BONUS', 'CHOIX', 'NOMBRE', 'CLASSEMENT');
-
--- CreateEnum
 CREATE TYPE "QuestionStatut" AS ENUM ('OUVERTE', 'FERMEE', 'RESOLUE', 'ANNULEE');
 
 -- CreateEnum
@@ -282,7 +279,7 @@ CREATE TABLE "questions" (
     "tournoiId" TEXT,
     "etapeId" TEXT,
     "matchId" TEXT,
-    "type" "QuestionType" NOT NULL,
+    "modele" TEXT NOT NULL,
     "statut" "QuestionStatut" NOT NULL DEFAULT 'OUVERTE',
     "intitule" TEXT NOT NULL,
     "configResolution" JSONB NOT NULL,

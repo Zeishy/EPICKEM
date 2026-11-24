@@ -26,8 +26,8 @@ INSERT INTO "pronostics" ("id", "utilisateurId", "matchId", "updatedAt")
 VALUES ('pronostic', 'user', 'winner', now());
 INSERT INTO "pronostic_participants" ("id", "pronosticId", "matchOrigineId", "resultatOrigine", "slot", "placement", "updatedAt")
 VALUES ('prediction', 'pronostic', 'initial', 'VAINQUEUR', 1, 1, now());
-INSERT INTO "questions" ("id", "matchId", "type", "intitule", "configResolution", "ouvertAt", "fermeAt", "updatedAt")
-VALUES ('q1', 'question-match', 'BONUS', 'Question 1', '{}', now(), now(), now()),
+INSERT INTO "questions" ("id", "matchId", "modele", "intitule", "configResolution", "ouvertAt", "fermeAt", "updatedAt")
+VALUES ('q1', 'question-match', 'MODELE_PERSONNALISE', 'Question 1', '{}', now(), now(), now()),
        ('q2', 'question-match', 'CLASSEMENT', 'Question 2', '{}', now(), now(), now());
 INSERT INTO "reponses" ("id", "questionId", "code", "libelle", "updatedAt")
 VALUES ('r1', 'q1', 'A', 'A', now()), ('r2', 'q2', 'B', 'B', now());
@@ -47,14 +47,14 @@ VALUES ('stat-membre', 'manche', 'definition', 'inscription', 'joueur', '4', now
 DO $$
 BEGIN
   BEGIN
-    INSERT INTO "questions" ("id", "type", "intitule", "configResolution", "ouvertAt", "fermeAt", "updatedAt")
-    VALUES ('no-scope', 'BONUS', 'X', '{}', now(), now(), now());
+    INSERT INTO "questions" ("id", "modele", "intitule", "configResolution", "ouvertAt", "fermeAt", "updatedAt")
+    VALUES ('no-scope', 'MODELE_PERSONNALISE', 'X', '{}', now(), now(), now());
     RAISE EXCEPTION 'question without scope accepted';
   EXCEPTION WHEN check_violation THEN NULL;
   END;
   BEGIN
-    INSERT INTO "questions" ("id", "tournoiId", "matchId", "type", "intitule", "configResolution", "ouvertAt", "fermeAt", "updatedAt")
-    VALUES ('invalid-scope', 'tournoi', 'initial', 'BONUS', 'X', '{}', now(), now(), now());
+    INSERT INTO "questions" ("id", "tournoiId", "matchId", "modele", "intitule", "configResolution", "ouvertAt", "fermeAt", "updatedAt")
+    VALUES ('invalid-scope', 'tournoi', 'initial', 'MODELE_PERSONNALISE', 'X', '{}', now(), now(), now());
     RAISE EXCEPTION 'question with multiple scopes accepted';
   EXCEPTION WHEN check_violation THEN NULL;
   END;

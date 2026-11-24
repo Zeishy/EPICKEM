@@ -172,34 +172,36 @@ L'effectif d'une inscription est distinct de l'équipe courante d'un joueur. La 
 
 ### Questions, réponses et pronostics
 
-| Entité                   | Champ                       | Type                | Description                                                             |
-| ------------------------ | --------------------------- | ------------------- | ----------------------------------------------------------------------- |
-| Question                 | tournoiId, etapeId, matchId | String?             | FK ; exactement une portée                                              |
-| Question                 | type                        | QuestionType        | `MATCH_WINNER`, `SCORE_EXACT`, `BONUS`, `CHOIX`, `NOMBRE`, `CLASSEMENT` |
-| Question                 | statut                      | QuestionStatut      | `OUVERTE` (défaut), `FERMEE`, `RESOLUE`, `ANNULEE`                      |
-| Question                 | intitule                    | String              | Texte                                                                   |
-| Question                 | configResolution            | Json                | Paramètres et données de résolution                                     |
-| Question                 | pointsBase                  | Int                 | Points de base, défaut 0                                                |
-| Question                 | ouvertAt, fermeAt           | DateTime            | Fenêtre de réponse                                                      |
-| Reponse                  | questionId                  | String              | FK vers Question                                                        |
-| Reponse                  | code                        | String              | Unique par question                                                     |
-| Reponse                  | libelle                     | String              | Texte                                                                   |
-| Reponse                  | estCorrecte                 | Boolean?            | Résultat connu ou non                                                   |
-| ReponsePickem            | utilisateurId, questionId   | String              | FK ; une réponse par utilisateur et question                            |
-| ReponsePickem            | reponseId                   | String?             | Choix prédéfini appartenant à la question                               |
-| ReponsePickem            | valeur                      | Json?               | Réponse libre : nombre, classement, etc.                                |
-| Pronostic                | utilisateurId, matchId      | String              | FK ; un pronostic par utilisateur et match                              |
-| PronosticParticipant     | pronosticId                 | String              | FK vers Pronostic                                                       |
-| PronosticParticipant     | inscriptionId               | String?             | Inscription prédite si connue                                           |
-| PronosticParticipant     | matchOrigineId              | String?             | Match précédent si l'inscription n'est pas encore connue                |
-| PronosticParticipant     | resultatOrigine             | ResultatOrigine?    | `VAINQUEUR` ou `PERDANT` du match précédent                             |
-| PronosticParticipant     | slot                        | Int                 | Slot prédit, unique par pronostic                                       |
-| PronosticParticipant     | score, placement            | Int?                | Score et rang prédits ; rang 1 désigne le vainqueur                     |
-| Pronostic, ReponsePickem | statut                      | PronosticStatut     | `SUBMITTED` (défaut), `LOCKED`, `SCORED`, `CANCELED`                    |
-| Pronostic, ReponsePickem | pointsObtenus               | Int                 | Points attribués, défaut 0                                              |
-| Pronostic, ReponsePickem | soumisAt, evalueAt          | DateTime, DateTime? | Soumission (défaut `now()`) et évaluation                               |
+| Entité                   | Champ                       | Type                | Description                                                            |
+| ------------------------ | --------------------------- | ------------------- | ---------------------------------------------------------------------- |
+| Question                 | tournoiId, etapeId, matchId | String?             | FK ; exactement une portée                                             |
+| Question                 | modele                      | String              | Identifiant du modèle Pick'em, validé par le futur registre applicatif |
+| Question                 | statut                      | QuestionStatut      | `OUVERTE` (défaut), `FERMEE`, `RESOLUE`, `ANNULEE`                     |
+| Question                 | intitule                    | String              | Texte                                                                  |
+| Question                 | configResolution            | Json                | Paramètres et données de résolution                                    |
+| Question                 | pointsBase                  | Int                 | Points de base, défaut 0                                               |
+| Question                 | ouvertAt, fermeAt           | DateTime            | Fenêtre de réponse                                                     |
+| Reponse                  | questionId                  | String              | FK vers Question                                                       |
+| Reponse                  | code                        | String              | Unique par question                                                    |
+| Reponse                  | libelle                     | String              | Texte                                                                  |
+| Reponse                  | estCorrecte                 | Boolean?            | Résultat connu ou non                                                  |
+| ReponsePickem            | utilisateurId, questionId   | String              | FK ; une réponse par utilisateur et question                           |
+| ReponsePickem            | reponseId                   | String?             | Choix prédéfini appartenant à la question                              |
+| ReponsePickem            | valeur                      | Json?               | Réponse libre : nombre, classement, etc.                               |
+| Pronostic                | utilisateurId, matchId      | String              | FK ; un pronostic par utilisateur et match                             |
+| PronosticParticipant     | pronosticId                 | String              | FK vers Pronostic                                                      |
+| PronosticParticipant     | inscriptionId               | String?             | Inscription prédite si connue                                          |
+| PronosticParticipant     | matchOrigineId              | String?             | Match précédent si l'inscription n'est pas encore connue               |
+| PronosticParticipant     | resultatOrigine             | ResultatOrigine?    | `VAINQUEUR` ou `PERDANT` du match précédent                            |
+| PronosticParticipant     | slot                        | Int                 | Slot prédit, unique par pronostic                                      |
+| PronosticParticipant     | score, placement            | Int?                | Score et rang prédits ; rang 1 désigne le vainqueur                    |
+| Pronostic, ReponsePickem | statut                      | PronosticStatut     | `SUBMITTED` (défaut), `LOCKED`, `SCORED`, `CANCELED`                   |
+| Pronostic, ReponsePickem | pointsObtenus               | Int                 | Points attribués, défaut 0                                             |
+| Pronostic, ReponsePickem | soumisAt, evalueAt          | DateTime, DateTime? | Soumission (défaut `now()`) et évaluation                              |
 
 Une réponse Pick'em possède soit un choix prédéfini, soit une valeur JSON. La FK composite garantit que le choix appartient à la question. La suppression d'une question supprime ses choix et réponses ; la suppression isolée d'un choix utilisé est refusée. Un participant prédit référence soit une inscription, soit le vainqueur ou perdant d'un match précédent ; un seul rang 1 est autorisé par pronostic. La suppression de son inscription ou de son match d'origine supprime cette ligne de prédiction : le pronostic doit alors être recalculé. Le perdant d'un match à plus de deux participants nécessite une règle spécifique à définir.
+
+Le registre de modèles de l'issue #60 validera `Question.modele` et couvrira les cinq modèles prévus : le plus choisi, le meilleur sur une statistique, total ou nombre, classement, et oui ou non. Il n'est pas encore implémenté ; la base accepte donc tout identifiant de modèle.
 
 ### Classements et sources
 
