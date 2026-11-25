@@ -116,12 +116,12 @@ Principe central : les résultats des matchs sont la seule source de vérité. L
 ## Documentation
 
 - [`docs/`](docs/) : documentation utilisateur et technique. Le site publié arrive avec #13.
-- `docs/adr/` : décisions d'architecture, à partir de #9.
+- [`docs/adr/`](docs/adr/) : décisions d'architecture (stack, hébergement, recalcul des résultats) et modèle pour en écrire une.
 - [`CHANGELOG.md`](CHANGELOG.md) : historique des versions.
 
 ## Contribuer
 
-Le workflow (branches, commits, pull requests, définition de « terminé ») est décrit dans [CONTRIBUTING.md](CONTRIBUTING.md). Le suivi se fait sur le [tableau du projet](https://github.com/users/Zeishy/projects/2).
+Les pull requests ciblent `dev`, la branche par défaut ; `main` ne reçoit que des livraisons depuis `dev`. Le workflow (branches, commits, pull requests, définition de « terminé ») est décrit dans [CONTRIBUTING.md](CONTRIBUTING.md). Le suivi se fait sur le [tableau du projet](https://github.com/users/Zeishy/projects/2).
 
 ## Licence
 

@@ -15,16 +15,35 @@ Elles priment sur tout le reste :
 ## Du ticket à la fusion
 
 1. **Prendre une issue** : la plus prioritaire de la colonne _Todo_ du [tableau](https://github.com/users/Zeishy/projects/2) qui n'a pas encore de responsable (`priority: P0` avant `P1`, puis `P2`). S'y assigner et la passer en _In progress_.
-2. **Créer une branche** depuis `main` à jour.
+2. **Créer une branche** depuis `dev` à jour.
 3. **Développer** avec des commits au format Conventional Commits.
-4. **Ouvrir une pull request** : l'issue passe en _In review_.
-5. **Faire relire** par un autre membre de l'équipe, corriger, puis fusionner en squash. L'issue passe en _Done_.
+4. **Ouvrir une pull request vers `dev`** : l'issue passe en _In review_.
+5. **Faire relire** par les deux autres membres de l'équipe, corriger, puis fusionner en squash. L'issue passe en _Done_.
+
+`main` ne reçoit que des livraisons : une pull request de `dev` vers `main`, ouverte quand `dev` est stable (fin de milestone, démo, release).
 
 Il n'y a pas de rôles fixes : chacun prend la tâche suivante, quel que soit le domaine.
 
 ## Branches
 
-`main` est protégée : pas de push direct ni de force push, une approbation et le check CI « Vérifications » sont obligatoires, les discussions de relecture doivent être résolues. Les branches fusionnées sont supprimées automatiquement.
+```text
+feat/25-ronde-suisse ──┐
+fix/112-score-negatif ─┼──► dev ──► main
+docs/13-site ──────────┘   (intégration)  (livraisons)
+```
+
+| Branche | Rôle                                                     | Reçoit                             | Relecture                    | Fusion           |
+| ------- | -------------------------------------------------------- | ---------------------------------- | ---------------------------- | ---------------- |
+| `dev`   | Branche par défaut, où le travail de chacun est intégré  | Les PR des branches de travail     | Les **deux** autres membres  | Squash           |
+| `main`  | Version livrée : déployée, taguée, montrée en soutenance | **Uniquement** une PR depuis `dev` | Un membre autre que l'auteur | Commit de fusion |
+
+Les deux branches sont protégées : pas de push direct, pas de force push, pas de suppression, check CI « Vérifications » obligatoire et discussions de relecture résolues. Une nouvelle modification annule les approbations déjà données.
+
+- **Vers `main`, seulement depuis `dev`.** Le check « Source de la PR » échoue pour toute autre branche, et la fusion est bloquée. Si une PR cible `main` par erreur, changer sa branche cible pour `dev` (bouton _Edit_ à côté du titre).
+- **`dev` vers `main` en commit de fusion, pas en squash.** Un squash réécrirait l'historique de `main` et ferait diverger les deux branches : chaque livraison suivante afficherait des conflits.
+- **Les issues se ferment à la fusion dans `dev`**, la branche par défaut, grâce au `Closes #<numéro>` de la PR.
+
+Les branches de travail fusionnées sont supprimées automatiquement ; `dev` et `main` ne peuvent pas l'être.
 
 Une branche par issue, nommée `<type>/<numéro>-<description-courte>` :
 
@@ -82,8 +101,16 @@ Si ESLint signale une erreur qu'il ne sait pas corriger, le commit est annulé :
 - **Titre** au format Conventional Commits : c'est le message du commit après la fusion en squash.
 - **Description** : remplir le modèle, avec `Closes #<numéro>` pour fermer l'issue automatiquement.
 - **Taille** : une PR par issue. Si une issue dépasse quelques jours de travail, la découper.
-- **Relecture** : toute l'équipe est sollicitée automatiquement ([CODEOWNERS](.github/CODEOWNERS)), l'approbation d'un membre autre que l'auteur suffit. Varier les relecteurs : chacun doit pouvoir expliquer tout le code en soutenance.
+- **Cible** : `dev`, qui est la branche par défaut.
+- **Relecture** : toute l'équipe est sollicitée automatiquement ([CODEOWNERS](.github/CODEOWNERS)). Une PR vers `dev` doit être approuvée par les deux autres membres : chacun voit donc passer tout le code, ce qui prépare la soutenance.
 - **Fusion** : en squash, par l'auteur, une fois la PR approuvée et la CI verte.
+
+### Livrer `dev` dans `main`
+
+1. Ouvrir une PR de `dev` vers `main`, avec un titre comme `chore: livraison de la milestone M1`.
+2. Vérifier que la CI est verte, dont « Source de la PR ».
+3. La faire approuver par un membre autre que l'auteur.
+4. Fusionner avec **Create a merge commit** (seule méthode autorisée sur `main`).
 
 ## Définition de « terminé »
 
