@@ -2,8 +2,11 @@ name: CI
 
 on:
   pull_request:
+    # « edited » relance la CI quand le titre ou la branche cible d'une PR change :
+    # le titre est revérifié, et une PR reciblée vers main repasse le contrôle de sa source.
+    types: [opened, synchronize, reopened, edited]
   push:
-    branches: [main]
+    branches: [main, dev]
 
 permissions:
   contents: read
@@ -16,7 +19,28 @@ env:
   TURBO_TELEMETRY_DISABLED: 1
 
 jobs:
-  # Nom du check à rendre obligatoire dans la protection de main (#4) : « Vérifications ».
+  # Check obligatoire sur main : seule la branche dev peut y être fusionnée.
+  # Les PR vers dev ou une autre branche passent toujours ce contrôle.
+  source:
+    name: Source de la PR
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Vers main, uniquement depuis dev
+        env:
+          BASE: ${{ github.base_ref }}
+          HEAD: ${{ github.head_ref }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ "$BASE" = "main" ] && { [ "$HEAD" != "dev" ] || [ "$HEAD_REPO" != "$REPO" ]; }; then
+            echo "::error::Une PR vers main doit venir de la branche dev de ce dépôt (reçu : $HEAD_REPO:$HEAD). Ciblez dev à la place."
+            exit 1
+          fi
+          echo "Source acceptée : $HEAD → $BASE"
+
+  # Check obligatoire sur main et sur dev : « Vérifications ».
   checks:
     name: Vérifications
     runs-on: ubuntu-latest

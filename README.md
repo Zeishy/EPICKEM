@@ -95,7 +95,7 @@ Principe central : les résultats des matchs sont la seule source de vérité. L
 
 ## Contribuer
 
-Le workflow (branches, commits, pull requests, définition de « terminé ») est décrit dans [CONTRIBUTING.md](CONTRIBUTING.md). Le suivi se fait sur le [tableau du projet](https://github.com/users/Zeishy/projects/2).
+Les pull requests ciblent `dev`, la branche par défaut ; `main` ne reçoit que des livraisons depuis `dev`. Le workflow (branches, commits, pull requests, définition de « terminé ») est décrit dans [CONTRIBUTING.md](CONTRIBUTING.md). Le suivi se fait sur le [tableau du projet](https://github.com/users/Zeishy/projects/2).
 
 ## Licence
 
