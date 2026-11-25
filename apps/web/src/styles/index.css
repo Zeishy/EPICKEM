@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@layer base {
+  html {
+    @apply bg-surface font-sans text-fg;
+  }
+
+  /* Focus toujours visible au clavier, quel que soit le composant. */
+  :focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  /* Le défilement doux n'est activé que si l'utilisateur ne demande pas moins d'animations. */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* prefers-reduced-motion : animations et transitions quasi instantanées partout. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
