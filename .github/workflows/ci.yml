@@ -85,3 +85,33 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+  # Vérifie que `pnpm bootstrap` monte l'environnement de développement depuis un clone vierge.
+  dev-env:
+    name: Environnement de dev
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Installation en une commande
+        run: pnpm bootstrap --no-dev
+
+      - name: Services joignables
+        run: |
+          docker compose exec -T postgres psql -U epickem -d epickem -c "select 1"
+          docker compose exec -T redis redis-cli ping | grep PONG
+
+      - name: Réinitialisation des données
+        run: pnpm services:reset
+
+      - name: Arrêt des services
+        if: always()
+        run: docker compose down --volumes
