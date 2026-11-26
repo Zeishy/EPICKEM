@@ -13,15 +13,16 @@
     "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:deploy": "prisma migrate deploy"
+    "prisma:deploy": "prisma migrate deploy",
+    "db:migrate": "prisma migrate deploy"
   },
   "dependencies": {
-    "@prisma/client": "^6.16.3"
+    "@prisma/client": "catalog:"
   },
   "devDependencies": {
     "@types/node": "catalog:",
     "eslint": "catalog:",
-    "prisma": "^6.16.3",
+    "prisma": "catalog:",
     "typescript": "catalog:"
   }
 }

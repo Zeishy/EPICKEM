@@ -22,6 +22,7 @@ erDiagram
   Match o|--o{ Match : perdant_suivant
   Manche ||--o{ MancheResultat : contient
   MatchParticipant ||--o{ MancheResultat : obtient
+  Utilisateur o|--o{ MancheResultat : enregistre
   Manche ||--o{ StatistiqueValeur : releve
   Inscription o|--o{ StatistiqueValeur : concerne
   Joueur o|--o{ StatistiqueValeur : concerne
@@ -57,7 +58,9 @@ erDiagram
 
 ## Dictionnaire des champs
 
-Toutes les entités ont `id` (clé primaire CUID), `createdAt` (date de création, `now()`) et `updatedAt` (date de mise à jour gérée par Prisma). Ils ne sont pas répétés dans les tableaux. Les champs de relation Prisma sans colonne propre sont indiqués dans le diagramme ; les clés étrangères sont listées ci-dessous. `?` signifie nullable.
+Toutes les entités ont `id` (clé primaire CUID) et `createdAt` (date de création, `now()`). Elles ont aussi `updatedAt` (date de mise à jour gérée par Prisma), sauf `MancheResultat`, dont les lignes sont immuables. Ces champs ne sont pas répétés dans les tableaux. Les champs de relation Prisma sans colonne propre sont indiqués dans le diagramme ; les clés étrangères sont listées ci-dessous. `?` signifie nullable.
+
+Conformément à [ADR-003](../adr/003-resultats-source-de-verite.md), les configurations, participants, résultats de manche et pronostics sont des données de référence. Les scores et placements de `MatchParticipant`, les points calculés de `Pronostic` et `ReponsePickem`, ainsi que les tables `ClassementEtape` et `ClassementPronostiqueur`, sont des caches dérivés : ils sont recalculés, jamais modifiés manuellement.
 
 ### Utilisateur
 
@@ -138,15 +141,20 @@ Une valeur peut concerner la manche entière, une inscription, un joueur ou un j
 | MatchParticipant | matchId                                       | String        | FK vers Match                                                                    |
 | MatchParticipant | inscriptionId                                 | String?       | FK vers Inscription ; NULL pour slot inconnu ou exempt                           |
 | MatchParticipant | slot                                          | Int           | Unique par match                                                                 |
-| MatchParticipant | score, placement                              | Int?          | Score et classement du participant                                               |
+| MatchParticipant | score, placement                              | Int?          | Caches dérivés des résultats des manches                                         |
 | Manche           | matchId                                       | String        | FK vers Match ; unique avec numero                                               |
 | Manche           | numero                                        | Int           | Numéro de manche                                                                 |
 | Manche           | joueAt                                        | DateTime?     | Date de jeu                                                                      |
 | MancheResultat   | mancheId, matchId                             | String        | FK composite vers la manche et son match                                         |
 | MancheResultat   | participantId, matchId                        | String        | FK composite vers le participant du même match                                   |
 | MancheResultat   | score, placement                              | Int?          | Résultat du participant dans la manche                                           |
+| MancheResultat   | version                                       | Int           | Version positive, unique par manche et participant ; défaut 1                    |
+| MancheResultat   | auteurId, auteurSysteme                       | String?       | Exactement un auteur : FK vers Utilisateur ou identifiant non vide du système    |
+| MancheResultat   | raison                                        | String?       | Motif non vide obligatoire pour chaque correction (version supérieure à 1)       |
 
 Les deux champs de chaque destination d'arbre doivent être renseignés ensemble. Les relations vers les matchs suivants empêchent leur suppression isolée tant qu'ils sont référencés. Le gagnant est déduit du résultat et des règles, sans cache `equipeGagnante`.
+
+Chaque version de `MancheResultat` est une ligne de référence en ajout seul, horodatée par `createdAt`. Une correction ajoute une version avec son auteur et son motif ; le résultat courant est la version de numéro le plus élevé pour chaque couple manche/participant. Les mises à jour et suppressions sont refusées en base, y compris via une suppression en cascade : un tournoi, un match, une manche, un participant ou un auteur référencé par un résultat ne peut pas être supprimé. L'application doit attribuer la première version 1 puis des versions strictement successives dans une transaction, gérer les conflits d'unicité en cas d'écriture concurrente et recalculer les caches dans cette même transaction. La base garantit l'unicité et la positivité des versions, mais pas leur succession ni le recalcul ; ces opérations relèvent des futurs services d'enregistrement et de recalcul (#64).
 
 ### Équipes, joueurs et inscriptions
 
@@ -250,6 +258,6 @@ pnpm --filter @epickem/api prisma:generate
 pnpm --filter @epickem/api prisma:deploy
 ```
 
-Pour créer une migration ultérieure en développement : `pnpm --filter @epickem/api prisma:migrate --name nom_du_changement`. Les contraintes `CHECK` et index partiels sont ajoutés manuellement à la migration SQL : Prisma ne les représente pas dans le schéma.
+`pnpm bootstrap` et `pnpm services:reset` exécutent aussi `db:migrate` via le script de l'API. Pour créer une migration ultérieure en développement : `pnpm --filter @epickem/api prisma:migrate --name nom_du_changement`. Les contraintes `CHECK`, index partiels et trigger d'ajout seul sont ajoutés manuellement à la migration SQL : Prisma ne les représente pas dans le schéma.
 
 Pour tester les contraintes SQL, après déploiement sur une base de test dédiée, exécuter `psql -v ON_ERROR_STOP=1 -f apps/api/prisma/tests/modele-v1.sql` avec les paramètres de connexion de cette base. Le script utilise une transaction annulée à la fin.

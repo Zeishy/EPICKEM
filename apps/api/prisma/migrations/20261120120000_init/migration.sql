@@ -207,10 +207,13 @@ CREATE TABLE "manche_resultats" (
     "mancheId" TEXT NOT NULL,
     "matchId" TEXT NOT NULL,
     "participantId" TEXT NOT NULL,
+    "version" INTEGER NOT NULL DEFAULT 1,
     "score" INTEGER,
     "placement" INTEGER,
+    "auteurId" TEXT,
+    "auteurSysteme" TEXT,
+    "raison" TEXT,
     "createdAt" TIMESTAMPTZ(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updatedAt" TIMESTAMPTZ(3) NOT NULL,
 
     CONSTRAINT "manche_resultats_pkey" PRIMARY KEY ("id")
 );
@@ -466,7 +469,10 @@ CREATE UNIQUE INDEX "manches_id_matchId_key" ON "manches"("id", "matchId");
 CREATE INDEX "manche_resultats_participantId_idx" ON "manche_resultats"("participantId");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "manche_resultats_mancheId_participantId_key" ON "manche_resultats"("mancheId", "participantId");
+CREATE INDEX "manche_resultats_auteurId_idx" ON "manche_resultats"("auteurId");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "manche_resultats_mancheId_participantId_version_key" ON "manche_resultats"("mancheId", "participantId", "version");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "equipes_sourceId_key" ON "equipes"("sourceId");
@@ -610,10 +616,13 @@ ALTER TABLE "match_participants" ADD CONSTRAINT "match_participants_inscriptionI
 ALTER TABLE "manches" ADD CONSTRAINT "manches_matchId_fkey" FOREIGN KEY ("matchId") REFERENCES "matchs"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "manche_resultats" ADD CONSTRAINT "manche_resultats_mancheId_matchId_fkey" FOREIGN KEY ("mancheId", "matchId") REFERENCES "manches"("id", "matchId") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "manche_resultats" ADD CONSTRAINT "manche_resultats_mancheId_matchId_fkey" FOREIGN KEY ("mancheId", "matchId") REFERENCES "manches"("id", "matchId") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "manche_resultats" ADD CONSTRAINT "manche_resultats_participantId_matchId_fkey" FOREIGN KEY ("participantId", "matchId") REFERENCES "match_participants"("id", "matchId") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "manche_resultats" ADD CONSTRAINT "manche_resultats_participantId_matchId_fkey" FOREIGN KEY ("participantId", "matchId") REFERENCES "match_participants"("id", "matchId") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "manche_resultats" ADD CONSTRAINT "manche_resultats_auteurId_fkey" FOREIGN KEY ("auteurId") REFERENCES "utilisateurs"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "equipes" ADD CONSTRAINT "equipes_sourceId_fkey" FOREIGN KEY ("sourceId") REFERENCES "sources"("id") ON DELETE SET NULL ON UPDATE CASCADE;
@@ -691,6 +700,23 @@ ALTER TABLE "classements_pronostiqueurs" ADD CONSTRAINT "classements_pronostique
 ALTER TABLE "classements_pronostiqueurs" ADD CONSTRAINT "classements_pronostiqueurs_tournoiId_fkey" FOREIGN KEY ("tournoiId") REFERENCES "tournois"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- PostgreSQL constraints not expressible in Prisma.
+ALTER TABLE "manche_resultats" ADD CONSTRAINT "manche_resultats_version_auteur_check" CHECK (
+    "version" >= 1 AND
+    num_nonnulls("auteurId", "auteurSysteme") = 1 AND
+    ("auteurSysteme" IS NULL OR length(btrim("auteurSysteme")) > 0) AND
+    ("version" = 1 OR ("raison" IS NOT NULL AND length(btrim("raison")) > 0))
+);
+
+CREATE FUNCTION "interdire_modification_resultat_manche"() RETURNS trigger AS $$
+BEGIN
+    RAISE EXCEPTION 'Les résultats de manche sont en ajout seul' USING ERRCODE = 'check_violation';
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER "manche_resultats_ajout_seul"
+    BEFORE UPDATE OR DELETE ON "manche_resultats"
+    FOR EACH ROW EXECUTE FUNCTION "interdire_modification_resultat_manche"();
+
 ALTER TABLE "tournois" ADD CONSTRAINT "tournois_taille_equipe_check" CHECK (
     ("modeParticipant" <> 'EQUIPE' OR ("tailleEquipeMin" IS NOT NULL AND "tailleEquipeMax" IS NOT NULL)) AND
     ("tailleEquipeMin" IS NULL OR "tailleEquipeMax" IS NULL OR "tailleEquipeMin" <= "tailleEquipeMax")

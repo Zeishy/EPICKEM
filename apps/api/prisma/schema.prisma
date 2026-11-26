@@ -124,17 +124,18 @@ enum StatistiqueType {
 }
 
 model Utilisateur {
-  id             String                    @id @default(cuid())
-  pseudo         String                    @unique
-  email          String                    @unique
-  motDePasseHash String
-  role           Role                      @default(UTILISATEUR)
-  joueur         Joueur?
-  pronostics     Pronostic[]
-  reponsesPickem ReponsePickem[]
-  classements    ClassementPronostiqueur[]
-  createdAt      DateTime                  @default(now()) @db.Timestamptz(3)
-  updatedAt      DateTime                  @updatedAt @db.Timestamptz(3)
+  id              String                    @id @default(cuid())
+  pseudo          String                    @unique
+  email           String                    @unique
+  motDePasseHash  String
+  role            Role                      @default(UTILISATEUR)
+  joueur          Joueur?
+  resultatsManche MancheResultat[]
+  pronostics      Pronostic[]
+  reponsesPickem  ReponsePickem[]
+  classements     ClassementPronostiqueur[]
+  createdAt       DateTime                  @default(now()) @db.Timestamptz(3)
+  updatedAt       DateTime                  @updatedAt @db.Timestamptz(3)
 
   @@map("utilisateurs")
 }
@@ -286,7 +287,9 @@ model MatchParticipant {
   inscription   Inscription?     @relation(fields: [inscriptionId], references: [id], onDelete: SetNull)
   inscriptionId String?
   slot          Int
+  /// Cache dérivé des résultats des manches, recalculé par le moteur.
   score         Int?
+  /// Cache dérivé des résultats des manches, recalculé par le moteur.
   placement     Int?
   resultats     MancheResultat[]
   createdAt     DateTime         @default(now()) @db.Timestamptz(3)
@@ -317,18 +320,23 @@ model Manche {
 
 model MancheResultat {
   id            String           @id @default(cuid())
-  manche        Manche           @relation(fields: [mancheId, matchId], references: [id, matchId], onDelete: Cascade)
+  manche        Manche           @relation(fields: [mancheId, matchId], references: [id, matchId], onDelete: Restrict)
   mancheId      String
   matchId       String
-  participant   MatchParticipant @relation(fields: [participantId, matchId], references: [id, matchId], onDelete: Cascade)
+  participant   MatchParticipant @relation(fields: [participantId, matchId], references: [id, matchId], onDelete: Restrict)
   participantId String
+  version       Int              @default(1)
   score         Int?
   placement     Int?
+  auteur        Utilisateur?     @relation(fields: [auteurId], references: [id], onDelete: Restrict)
+  auteurId      String?
+  auteurSysteme String?
+  raison        String?
   createdAt     DateTime         @default(now()) @db.Timestamptz(3)
-  updatedAt     DateTime         @updatedAt @db.Timestamptz(3)
 
-  @@unique([mancheId, participantId])
+  @@unique([mancheId, participantId, version])
   @@index([participantId])
+  @@index([auteurId])
   @@map("manche_resultats")
 }
 
@@ -518,6 +526,7 @@ model PronosticParticipant {
   @@map("pronostic_participants")
 }
 
+/// Cache dérivé des résultats de l'étape, recalculable.
 model ClassementEtape {
   id            String      @id @default(cuid())
   etape         Etape       @relation(fields: [etapeId], references: [id], onDelete: Cascade)
@@ -537,6 +546,7 @@ model ClassementEtape {
   @@map("classements_etape")
 }
 
+/// Cache dérivé des points des pronostiqueurs, recalculable.
 model ClassementPronostiqueur {
   id            String      @id @default(cuid())
   utilisateur   Utilisateur @relation(fields: [utilisateurId], references: [id], onDelete: Cascade)

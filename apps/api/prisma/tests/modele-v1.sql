@@ -24,8 +24,10 @@ INSERT INTO "match_participants" ("id", "matchId", "slot", "updatedAt")
 VALUES ('p1', 'initial', 1, now()), ('p2', 'initial', 2, now()), ('p3', 'initial', 3, now()),
        ('autre', 'winner', 1, now());
 INSERT INTO "manches" ("id", "matchId", "numero", "updatedAt") VALUES ('manche', 'initial', 1, now());
-INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "placement", "updatedAt")
-VALUES ('resultat', 'manche', 'initial', 'p3', 1, now());
+INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "placement", "auteurId")
+VALUES ('resultat', 'manche', 'initial', 'p3', 1, 'user');
+INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "version", "placement", "auteurSysteme", "raison")
+VALUES ('correction', 'manche', 'initial', 'p3', 2, 2, 'start.gg', 'Synchronisation');
 INSERT INTO "pronostics" ("id", "utilisateurId", "matchId", "updatedAt")
 VALUES ('pronostic', 'user', 'winner', now());
 INSERT INTO "pronostic_participants" ("id", "pronosticId", "matchOrigineId", "resultatOrigine", "slot", "placement", "updatedAt")
@@ -73,11 +75,67 @@ BEGIN
   EXCEPTION WHEN check_violation THEN NULL;
   END;
   BEGIN
-    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "updatedAt")
-    VALUES ('invalid-resultat', 'manche', 'initial', 'autre', now());
+    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "auteurId")
+    VALUES ('invalid-resultat', 'manche', 'initial', 'autre', 'user');
     RAISE EXCEPTION 'participant issu d''un autre match accepté';
   EXCEPTION WHEN foreign_key_violation THEN NULL;
   END;
+  BEGIN
+    UPDATE "manche_resultats" SET "placement" = 3 WHERE "id" = 'resultat';
+    RAISE EXCEPTION 'modification d''un résultat acceptée';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    DELETE FROM "manche_resultats" WHERE "id" = 'correction';
+    RAISE EXCEPTION 'suppression d''un résultat acceptée';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "version", "auteurId", "raison")
+    VALUES ('doublon-version', 'manche', 'initial', 'p3', 2, 'user', 'Correction');
+    RAISE EXCEPTION 'version dupliquée acceptée';
+  EXCEPTION WHEN unique_violation THEN NULL;
+  END;
+  BEGIN
+    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "version", "auteurId")
+    VALUES ('sans-raison', 'manche', 'initial', 'p3', 3, 'user');
+    RAISE EXCEPTION 'correction sans raison acceptée';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "version", "auteurId", "raison")
+    VALUES ('raison-vide', 'manche', 'initial', 'p3', 3, 'user', ' ');
+    RAISE EXCEPTION 'correction avec raison vide acceptée';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "auteurSysteme")
+    VALUES ('sans-auteur', 'manche', 'initial', 'p2', ' ');
+    RAISE EXCEPTION 'auteur système vide accepté';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId")
+    VALUES ('auteur-absent', 'manche', 'initial', 'p2');
+    RAISE EXCEPTION 'résultat sans auteur accepté';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "auteurId", "auteurSysteme")
+    VALUES ('deux-auteurs', 'manche', 'initial', 'p2', 'user', 'import');
+    RAISE EXCEPTION 'résultat avec deux auteurs accepté';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    INSERT INTO "manche_resultats" ("id", "mancheId", "matchId", "participantId", "version", "auteurId")
+    VALUES ('version-invalide', 'manche', 'initial', 'p2', 0, 'user');
+    RAISE EXCEPTION 'version nulle acceptée';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  IF (SELECT count(*) FROM "manche_resultats" WHERE "mancheId" = 'manche' AND "participantId" = 'p3') <> 2
+    OR (SELECT "placement" FROM "manche_resultats" WHERE "mancheId" = 'manche' AND "participantId" = 'p3' ORDER BY "version" DESC LIMIT 1) <> 2 THEN
+    RAISE EXCEPTION 'historique des résultats incorrect';
+  END IF;
   BEGIN
     INSERT INTO "classements_pronostiqueurs" ("id", "utilisateurId", "rang", "updatedAt")
     VALUES ('general-duplicate', 'user', 2, now());
@@ -152,13 +210,13 @@ BEGIN
   END IF;
 END $$;
 
-DELETE FROM "tournois" WHERE "id" = 'tournoi';
-
 DO $$
 BEGIN
-  IF EXISTS (SELECT 1 FROM "matchs" WHERE "etapeId" = 'etape') THEN
-    RAISE EXCEPTION 'suppression en cascade du tournoi échouée';
-  END IF;
+  BEGIN
+    DELETE FROM "tournois" WHERE "id" = 'tournoi';
+    RAISE EXCEPTION 'suppression d''un tournoi avec résultats acceptée';
+  EXCEPTION WHEN foreign_key_violation OR restrict_violation THEN NULL;
+  END;
 END $$;
 
 ROLLBACK;
