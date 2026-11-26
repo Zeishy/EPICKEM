@@ -1,0 +1,41 @@
+# Services de développement : PostgreSQL et Redis.
+# Lancés par `pnpm bootstrap` et `pnpm dev`, ou à la main avec `pnpm services:up`.
+# Les ports et identifiants correspondent à DATABASE_URL et REDIS_URL dans .env.example.
+name: epickem
+
+services:
+  postgres:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_USER: epickem
+      POSTGRES_PASSWORD: epickem
+      POSTGRES_DB: epickem
+    ports:
+      # Exposé uniquement sur la machine locale.
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      # À partir de PostgreSQL 18, le volume se monte sur /var/lib/postgresql.
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U epickem -d epickem"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+
+  redis:
+    image: redis:8-alpine
+    ports:
+      - "127.0.0.1:${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  redis-data:

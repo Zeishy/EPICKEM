@@ -16,33 +16,59 @@ Toutes les données de démonstration sont générées : le projet ne contient a
 
 ## Prérequis
 
-| Outil   | Version                    | Installation                                       |
-| ------- | -------------------------- | -------------------------------------------------- |
-| Node.js | 24 ou plus (voir `.nvmrc`) | [nodejs.org](https://nodejs.org)                   |
-| pnpm    | 11                         | `npm install -g pnpm@11`                           |
-| Docker  | récent                     | Nécessaire pour PostgreSQL et Redis à partir de #6 |
+| Outil   | Version                    | Installation                                                                                                                                           |
+| ------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Node.js | 24 ou plus (voir `.nvmrc`) | [nodejs.org](https://nodejs.org)                                                                                                                       |
+| pnpm    | 11                         | `npm install -g pnpm@11`                                                                                                                               |
+| Docker  | Compose v2                 | Windows et macOS : [Docker Desktop](https://www.docker.com/products/docker-desktop/), Linux : [Docker Engine](https://docs.docker.com/engine/install/) |
 
-## Installation
+Docker fait tourner PostgreSQL et Redis : rien d'autre à installer. Lancez Docker Desktop avant de continuer.
+
+## Installation et lancement
+
+Depuis un clone vierge, une seule commande installe et lance tout :
 
 ```bash
 git clone git@github.com:Zeishy/EPICKEM.git
 cd EPICKEM
-pnpm install
-pnpm build
-cp .env.example .env
+pnpm bootstrap
 ```
 
-- `pnpm install` installe aussi les hooks git, qui vérifient le format et le message de chaque commit.
-- `pnpm build` compile les paquets partagés : le lint et l'éditeur en ont besoin pour connaître leurs types.
-- Le fichier `.env.example` décrit chaque variable. Le fichier `.env` n'est jamais commité.
+`pnpm bootstrap` enchaîne :
+
+1. la vérification des prérequis (Node.js, pnpm, Docker), avec la marche à suivre si l'un manque ;
+2. la création de `.env` à partir de `.env.example`, s'il n'existe pas encore ;
+3. `pnpm install`, qui installe aussi les hooks git (format et message de chaque commit) ;
+4. le démarrage de PostgreSQL et Redis dans Docker, en attendant qu'ils soient prêts ;
+5. `pnpm build`, qui compile les paquets partagés dont le lint et l'éditeur ont besoin ;
+6. les migrations de la base et le chargement des données de démo ;
+7. `pnpm dev`, qui lance la plateforme.
+
+Les fois suivantes, `pnpm dev` suffit : il redémarre les services s'ils sont arrêtés.
+
+Le fichier `.env.example` décrit chaque variable. Le fichier `.env` n'est jamais commité.
 
 Sous VS Code, installez les extensions recommandées à l'ouverture du dossier : le code est alors formaté et corrigé à chaque enregistrement.
 
-## Lancement
+### Services PostgreSQL et Redis
 
-```bash
-pnpm dev
-```
+| Commande               | Effet                                                          |
+| ---------------------- | -------------------------------------------------------------- |
+| `pnpm services:up`     | Lance les services et attend qu'ils soient prêts               |
+| `pnpm services:down`   | Arrête les services, les données sont conservées               |
+| `pnpm services:reset`  | Supprime toutes les données, relance les services, migre, seed |
+| `pnpm services:status` | Affiche l'état des services                                    |
+
+| Service    | Adresse                                               | Identifiants          |
+| ---------- | ----------------------------------------------------- | --------------------- |
+| PostgreSQL | `postgresql://epickem:epickem@localhost:5432/epickem` | `epickem` / `epickem` |
+| Redis      | `redis://localhost:6379`                              | aucun                 |
+
+Les services n'écoutent que sur la machine locale. Ces identifiants ne servent qu'en développement.
+
+**Un port est déjà utilisé** (un PostgreSQL installé sur la machine, par exemple) : changez `POSTGRES_PORT` ou `REDIS_PORT` dans `.env`, et reportez le port dans `DATABASE_URL` ou `REDIS_URL`.
+
+## Lancement
 
 Pour l'instant, seule une API provisoire démarre, sur <http://localhost:3000/health>. Les applications arrivent avec leurs issues :
 
@@ -90,12 +116,12 @@ Principe central : les résultats des matchs sont la seule source de vérité. L
 ## Documentation
 
 - [`docs/`](docs/) : documentation utilisateur et technique. Le site publié arrive avec #13.
-- `docs/adr/` : décisions d'architecture, à partir de #9.
+- [`docs/adr/`](docs/adr/) : décisions d'architecture (stack, hébergement, recalcul des résultats) et modèle pour en écrire une.
 - [`CHANGELOG.md`](CHANGELOG.md) : historique des versions.
 
 ## Contribuer
 
-Le workflow (branches, commits, pull requests, définition de « terminé ») est décrit dans [CONTRIBUTING.md](CONTRIBUTING.md). Le suivi se fait sur le [tableau du projet](https://github.com/users/Zeishy/projects/2).
+Les pull requests ciblent `dev`, la branche par défaut ; `main` ne reçoit que des livraisons depuis `dev`. Le workflow (branches, commits, pull requests, définition de « terminé ») est décrit dans [CONTRIBUTING.md](CONTRIBUTING.md). Le suivi se fait sur le [tableau du projet](https://github.com/users/Zeishy/projects/2).
 
 ## Licence
 
